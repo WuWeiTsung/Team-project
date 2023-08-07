@@ -1,0 +1,48 @@
+//主要色
+$primary {
+  color: #566b5a;
+}
+$primaryLight {
+  color: #e6e6e1;
+}
+//附註色
+$secondaryWarning {
+  color: #ffd246;
+}
+$secondaryLight {
+  color: #e9d79c;
+}
+$secondaryEmphasis {
+  color: #ff985e;
+}
+$black {
+  color: #283c1e;
+}
+$white {
+  color: #ffffff;
+}
+
+.primary {
+  color: $primary;
+}
+.bgPrimary {
+  background: $primary;
+}
+.primaryLight {
+  color: $primaryLight;
+}
+.secondaryWarning {
+  color: $secondaryWarning;
+}
+.secondaryLight {
+  color: $secondaryLight;
+}
+.secondaryEmphasis {
+  color: $secondaryEmphasis;
+}
+.black {
+  color: $black;
+}
+.white {
+  color: $white;
+}

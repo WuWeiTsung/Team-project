@@ -5,7 +5,6 @@
 - 所有 class 命名方式使用：小駝峰 (ex:menuList,pageItem,pageItemList)
 - 使用 OOCSS、SMACSS、BEM 讓架構與樣式分離
 - 如非共用名稱，可依 html 名稱當作統一前綴詞，避免與其他分頁名稱相同互相干擾。
-- 使用 mixin 撰寫 RWD
 
 ---
 
