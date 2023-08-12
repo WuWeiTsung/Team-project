@@ -7,11 +7,13 @@
 //bootstrap客製化區(helpers)
 @import "./utils/variables";
 
+//載入bootstrap其他組件
+@import "../../node_modules/bootstrap";
+
 //bootstrap客製化區(components)
 
 //base 基本設定
-@import "./base/reset";
-@import "./base/global";
+@import "./base/base";
 @import "./base/typography";
 
 //utils 通用設定
@@ -23,6 +25,3 @@
 
 //pages css區
 @import "./pages/index.scss";
-
-//載入bootstrap其他組件
-@import "../../node_modules/bootstrap";
