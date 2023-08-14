@@ -1,5 +1,5 @@
 // import字型區
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Playfair+Display+SC:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
 //bootstrap區
 @import "../../node_modules/bootstrap/scss/functions";
@@ -14,7 +14,7 @@
 
 //base 基本設定
 @import "./base/base";
-@import "./base/typography";
+@import "./base/button";
 
 //utils 通用設定
 @import "./utils/mixin";
