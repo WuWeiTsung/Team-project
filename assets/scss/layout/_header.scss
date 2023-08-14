@@ -1,4 +1,18 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo {
+  a {
+    display: block;
+    background-image: url("../assets/images/logo.svg");
+    width: 12.5rem;
+    height: 2.5rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.bg-blur {
+  background: rgba(20, 20, 20, 0.2);
+  backdrop-filter: blur(10px);
 }
