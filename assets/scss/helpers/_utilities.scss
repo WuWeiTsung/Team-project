@@ -799,8 +799,22 @@ $utilities: map-merge(
       property: z-index,
       class: z,
       values: $zindex-levels,
-    )
+    ),
     // scss-docs-end utils-zindex
+    "background-size": (
+      property: background-size,
+      class: bg-size,
+      values:(
+        cover :cover,
+        contain: contain,
+        50: 50%,
+      )),
+    "background-position": (
+      property: background-position,
+      class: bg-position,
+      values:(
+        center: center center,
+      )),
   ),
   $utilities
 );
