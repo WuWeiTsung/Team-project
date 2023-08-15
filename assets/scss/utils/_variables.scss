@@ -390,7 +390,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret: true !default;
-$enable-rounded: true !default;
+$enable-rounded: false;//true !default;
 $enable-shadows: false !default;
 $enable-gradients: true !default;
 $enable-transitions: true !default;
@@ -456,6 +456,10 @@ $spacers: (
   18: $spacer * 18,
   19: $spacer * 19,
   20: $spacer * 20,
+  21: $spacer * 21,
+  22: $spacer * 22,
+  23: $spacer * 23,
+  24: $spacer * 24,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
