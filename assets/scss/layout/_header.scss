@@ -15,4 +15,40 @@
 .bg-blur {
   background: rgba(20, 20, 20, 0.2);
   backdrop-filter: blur(10px);
+  &:hover {
+    background: $light;
+    color: var(--primary, #566b5a);
+  }
+}
+.opacity-90 {
+  opacity: 0.9;
+}
+
+//中英文字轉換
+.nav-item {
+  position: relative;
+  &-en {
+    opacity: 1;
+    color: $white;
+    transition: opacity 0.4s ease-out;
+  }
+  &-ch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+  }
+  &:hover {
+    .nav-item-en {
+      opacity: 0;
+    }
+    .nav-item-ch {
+      opacity: 1;
+      font-family: "Montserrat", sans-serif;
+      color: $primary;
+    }
+  }
 }
