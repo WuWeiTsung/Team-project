@@ -12,12 +12,22 @@
     white-space: nowrap;
   }
 }
-.bg-blur {
+// .bg-blur {
+//   background: rgba(20, 20, 20, 0.2);
+//   backdrop-filter: blur(10px);
+//   &:hover {
+//     background: $light;
+//     color: var(--primary, #566b5a);
+//   }
+// }
+.navbar-hover {
   background: rgba(20, 20, 20, 0.2);
-  backdrop-filter: blur(10px);
+  transition: background-color 0.3s, color 0.3s;
   &:hover {
     background: $light;
-    color: var(--primary, #566b5a);
+    .nav-link {
+      color: #566b5a;
+    }
   }
 }
 .opacity-90 {
@@ -50,5 +60,21 @@
       font-family: "Montserrat", sans-serif;
       color: $primary;
     }
+  }
+}
+
+// header icon
+.header-form {
+  .input-group {
+    border-bottom: 1px solid $white;
+  }
+  .form-control {
+    box-shadow: none;
+    caret-color: #566b5a;
+  }
+}
+.search-box {
+  &::placeholder {
+    color: $white;
   }
 }

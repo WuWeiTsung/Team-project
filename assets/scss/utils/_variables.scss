@@ -404,7 +404,7 @@ $escaped-characters: (
 
 $enable-caret: true !default;
 $enable-rounded: false; //true !default;
-$enable-shadows: false !default;
+$enable-shadows: true !default;
 $enable-gradients: true !default;
 $enable-transitions: true !default;
 $enable-reduced-motion: true !default;
@@ -663,6 +663,7 @@ $font-family-sans-serif: "Montserrat", "Noto Serif TC", sans-serif !default; // 
 // "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
 //  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 // "Noto Color Emoji"
+
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
