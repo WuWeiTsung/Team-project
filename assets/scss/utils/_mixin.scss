@@ -1,13 +1,13 @@
-// 992px以上是桌機
-// 991.98px以下開啟平板樣式
+// 992px以上是桌機lg
+// 991.98px以下開啟平板md樣式
 @mixin pad {
   @media (max-width: 991.98px) {
     @content;
   }
 }
-// 575.98px以下開啟手機模式
+// 767.98px以下開啟手機sm模式
 @mixin mobile {
-  @media (max-width: 575.98px) {
+  @media (max-width: 767.98px) {
     @content;
   }
 }

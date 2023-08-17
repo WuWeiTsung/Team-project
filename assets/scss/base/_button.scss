@@ -1,0 +1,32 @@
+.custom-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: none;
+  color: orange;
+  border: none;
+  border-bottom: 2px solid orange;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: orange;
+  transition: height 0.3s;
+  z-index: -1;
+}
+
+.custom-button:hover {
+  background: orange;
+  color: white;
+}
+
+.custom-button:hover::before {
+  height: 100%;
+}
