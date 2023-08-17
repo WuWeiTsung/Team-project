@@ -1,6 +1,9 @@
 // import字型區
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+//載入icon
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-//bootstrap區
+//bootstrap5客製化設定區
 @import "../../node_modules/bootstrap/scss/functions";
 
 //bootstrap客製化區(helpers)
@@ -8,11 +11,19 @@
 @import "./utils/index-3.scss";
 
 //bootstrap客製化區(components)
+//客製化variables放在這
+@import './utils/variables';
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+//客製化utilites放在這
+@import './utils/utilities';
+//bootstrap5全部內容
+@import "../../node_modules/bootstrap";
 
 //base 基本設定
-@import "./base/reset";
-@import "./base/global";
-@import "./base/typography";
+@import "./base/base";
+@import "./base/button";
 
 //utils 通用設定
 @import "./utils/mixin";
@@ -20,9 +31,19 @@
 //layout css區
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+@import "./layout/index-1";
 
 //pages css區
-@import "./pages/index.scss";
 
-//載入bootstrap其他組件
-@import "../../node_modules/bootstrap";
+.bg-image {
+    background-image: url('../images/img_diy_bg.png');  /* 請將 'path-to-your-image.jpg' 替換成您的圖片路徑 */
+    width: 100%;  /* 或其他您希望的寬度 */
+    height: 600px;
+    border-radius: 80px 0px 80px 0px;
+  }
+  
+  .bg-image2 {
+    background-image: url('../images/img-scroll-view-bg.png');  /* 請將 'path-to-your-image.jpg' 替換成您的圖片路徑 */
+    max-width: 100%;  /* 或其他您希望的寬度 */
+    height: 562px;
+  }
