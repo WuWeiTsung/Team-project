@@ -9,4 +9,6 @@
     background-image: url('../images/img-scroll-view-bg.png');  /* 請將 'path-to-your-image.jpg' 替換成您的圖片路徑 */
     max-width: 100%;  /* 或其他您希望的寬度 */
     height: 562px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
