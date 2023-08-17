@@ -1,0 +1,12 @@
+.bg-image {
+    background-image: url('../images/img_diy_bg.png');  /* 請將 'path-to-your-image.jpg' 替換成您的圖片路徑 */
+    width: 100%;  /* 或其他您希望的寬度 */
+    height: 600px;
+    border-radius: 80px 0px 80px 0px;
+  }
+  
+  .bg-image2 {
+    background-image: url('../images/img-scroll-view-bg.png');  /* 請將 'path-to-your-image.jpg' 替換成您的圖片路徑 */
+    max-width: 100%;  /* 或其他您希望的寬度 */
+    height: 562px;
+  }
