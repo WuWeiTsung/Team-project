@@ -8,6 +8,12 @@
 //bootstrap5設定區
 @import "../../node_modules/bootstrap/scss/functions";
 
+
+//bootstrap客製化區(helpers)
+@import "./utils/variables";
+@import "./utils/index-3.scss";
+
+
 //客製化variables放在這
 @import "./utils/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
@@ -35,4 +41,3 @@
 @import "./layout/index-1";
 
 //pages css區
-
