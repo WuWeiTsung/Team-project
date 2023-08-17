@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GreenSheep handmade jewelry</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>GreenSheep handmade jewelry</title>
+  </head>
 
-<body>
-  <%- include('./layout/header'); -%>
-
-  <%- include('./layout/index-1'); -%>
-  <%- include('./layout/index-2'); -%>
-  <%- include('./layout/index-3'); -%>   
-
-
-
-  <%- include('./layout/footer'); -%>
-<script type="module" src="../main.js"></script>
-</body>
-
-
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="custom-bg-gradient">
+      <%- include('./layout/index-1'); -%>
+        <%- include('./layout/index-2'); -%>
+           <%- include('./layout/index-3'); -%>   
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
+
 

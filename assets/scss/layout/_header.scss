@@ -12,12 +12,22 @@
     white-space: nowrap;
   }
 }
+
 .bg-blur {
   background: rgba(20, 20, 20, 0.2);
   backdrop-filter: blur(10px);
+}
+.navbar-hover {
+  background: rgba(20, 20, 20, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: 1px solid transparent;
+
   &:hover {
     background: $light;
-    color: var(--primary, #566b5a);
+    border-bottom: 1px solid $greyD4;
+    .nav-link {
+      color: #566b5a;
+    }
   }
 }
 .opacity-90 {
@@ -51,4 +61,23 @@
       color: $primary;
     }
   }
+}
+
+// header icon
+.header-form {
+  .input-group {
+    border-bottom: 1px solid $white;
+  }
+  .form-control {
+    // box-shadow: none;
+    caret-color: #566b5a;
+  }
+}
+.search-box {
+  &::placeholder {
+    color: $white;
+  }
+}
+.no-box-shadow {
+  box-shadow: none !important;
 }

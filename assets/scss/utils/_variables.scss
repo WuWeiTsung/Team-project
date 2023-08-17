@@ -298,48 +298,61 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary: #566b5a !default; //$blue !default;
-$secondary: #ff985e !default; //$gray-600 !default;
+$primary: #566b5a !default; //$blue !default; *custom
+$secondary: #ff985e !default; //$gray-600 !default; *custom
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: #e6e6e1 !default; //$gray-100 !default;
-$dark: #283c1e !default; //$gray-900 !default;
-$deco: #ffd246 !default;
-$decolight: #e9d79c !default;
-$greyF7: #f7f7f7 !default;
-$greyE9: #e9e9e9 !default;
-$greyD4: #d4d4d4 !default;
-$grey9F: #9f9f9f !default;
-$grey66: #666666 !default;
-$grey33: #333333 !default;
-$grey1D: #1d1d1d !default;
+$light: #e6e6e1 !default; //$gray-100 !default; *custom
+$dark: #283c1e !default; //$gray-900 !default; *custom
+$deco: #ffd246 !default; // *custom
+$decolight: #e9d79c !default; // *custom
+$greyF7: #f7f7f7 !default; // *custom
+$greyE9: #e9e9e9 !default; // *custom
+$greyD4: #d4d4d4 !default; // *custom
+$grey9F: #9f9f9f !default; // *custom
+$grey66: #666666 !default; // *custom
+$grey33: #333333 !default; // *custom
+$grey1D: #1d1d1d !default; // *custom
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary": #566b5a,
+  // *custom
   //$primary,
   "secondary": #ff985e,
+  // *custom
   //$secondary,
   "success": $success,
   "info": $info,
   "warning": $warning,
   "danger": $danger,
   "light": #e6e6e1,
+  // *custom
   //$light,
   "dark": #283c1e,
+  // *custom
   //$dark,
   "deco": #ffd246,
+  // *custom
   "decolight": #e9d79c,
+  // *custom
   "greyF7": #f7f7f7,
+  // *custom
   "greyE9": #e9e9e9,
+  // *custom
   "greyD4": #d4d4d4,
+  // *custom
   "grey9F": #9f9f9f,
+  // *custom
   "grey66": #666666,
+  // *custom
   "grey33": #333333,
+  // *custom
   "grey1D": #1d1d1d,
+  // *custom
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -390,8 +403,8 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret: true !default;
-$enable-rounded: false;//true !default;
-$enable-shadows: false !default;
+$enable-rounded: false; //true !default;
+$enable-shadows: true !default;
 $enable-gradients: true !default;
 $enable-transitions: true !default;
 $enable-reduced-motion: true !default;
@@ -433,7 +446,7 @@ $gradient: linear-gradient(
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 0.25rem !default;
+$spacer: 0.25rem !default; // *custom
 $spacers: (
   0: 0,
   1: $spacer * 1,
@@ -460,7 +473,7 @@ $spacers: (
   22: $spacer * 22,
   23: $spacer * 23,
   24: $spacer * 24,
-) !default;
+) !default; // *custom
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -484,8 +497,8 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-text-align: center !default;
-$body-color: #9f9f9f !default;
+$body-text-align: center !default; // *custom
+$body-color: #9f9f9f !default; // *custom
 $body-bg: $white !default;
 
 $body-secondary-color: rgba($body-color, 0.75) !default;
@@ -500,8 +513,8 @@ $body-emphasis-color: $black !default;
 //
 // Style anchor elements.
 
-$link-color: $white !default;
-$link-decoration: none !default;
+$link-color: $white !default; // *custom
+$link-decoration: none !default; // *custom
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($primary, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
@@ -522,7 +535,7 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 0 !default;
+$paragraph-margin-bottom: 0 !default; // *custom
 
 // Grid breakpoints
 //
@@ -650,11 +663,12 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Montserrat", "Noto Serif TC", sans-serif !default;
+$font-family-sans-serif: "Montserrat", "Noto Serif TC", sans-serif !default; // *custom
 //system-ui, -apple-system,
 // "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
 //  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 // "Noto Color Emoji"
+
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
@@ -678,19 +692,19 @@ $font-weight-bolder: bolder !default;
 
 $font-weight-base: $font-weight-normal !default;
 
-$line-height-base: 1.2 !default;
-$line-height-sm: 1.25 !default;
+$line-height-base: 1.2 !default; // *custom //1.5
+$line-height-sm: 1.25 !default; // *custom //1.25
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 3 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base * 1.125 !default;
-$h7-font-size: $font-size-base !default;
-$h8-font-size: $font-size-base * 0.875 !default;
-$h9-font-size: $font-size-base * 0.75 !default;
+$h1-font-size: $font-size-base * 3 !default; // *custom
+$h2-font-size: $font-size-base * 2 !default; // *custom
+$h3-font-size: $font-size-base * 1.75 !default; // *custom
+$h4-font-size: $font-size-base * 1.5 !default; // *custom
+$h5-font-size: $font-size-base * 1.25 !default; // *custom
+$h6-font-size: $font-size-base * 1.125 !default; // *custom
+$h7-font-size: $font-size-base !default; // *custom
+$h8-font-size: $font-size-base * 0.875 !default; // *custom
+$h9-font-size: $font-size-base * 0.75 !default; // *custom
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -704,14 +718,14 @@ $font-sizes: (
   7: $h7-font-size,
   8: $h8-font-size,
   9: $h9-font-size,
-) !default;
+) !default; // *custom
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * 6 !default; //0.5
-$headings-font-family: "Playfair Display SC", serif !default;
+$headings-margin-bottom: 0 !default; // *custom  //0.5
+$headings-font-family: "Playfair Display SC", "Noto Serif TC", serif !default; // *custom
 $headings-font-style: null !default;
-$headings-font-weight: 400 !default; //500
+$headings-font-weight: 400 !default; // *custom //500
 $headings-line-height: 1.2 !default;
 $headings-color: inherit !default;
 // scss-docs-end headings-variables
@@ -730,11 +744,14 @@ $display-font-sizes: (
   //3rem,
   6: 1.15rem,
   //2.5rem,
-) !default;
+  7: 1rem,
+  8: 0.875rem,
+  9: 0.075rem,
+) !default; // *custom
 
-$display-font-family: "Montserrat", sans-serif !default;
+$display-font-family: "Montserrat", sans-serif !default; // *custom
 $display-font-style: null !default;
-$display-font-weight: 500 !default; //300 !default;
+$display-font-weight: 500 !default; // *custom //300 !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
@@ -847,10 +864,10 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y: 0.5rem !default;
-$input-btn-padding-x: 0.75rem !default;
-$input-btn-font-family: "Montserrat", sans-serif !default;
-$input-btn-font-size: 0.875rem !default;
+$input-btn-padding-y: 0.5rem !default; //*custom
+$input-btn-padding-x: 0.75rem !default; //*custom
+$input-btn-font-family: "Montserrat", sans-serif !default; //*custom
+$input-btn-font-size: 0.875rem !default; //*custom
 $input-btn-line-height: $line-height-base !default;
 
 $input-btn-focus-width: $focus-ring-width !default;
