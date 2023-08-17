@@ -13,14 +13,9 @@ a {
   color: inherit;
 }
 
-.custom-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: none;
-  color: orange;
-  border: none;
-  border-bottom: 2px solid orange;
-  cursor: pointer;
-  position: relative;
-  transition: background 0.3s, color 0.3s;
+.font-noto-serif {
+  font-family: "Noto Serif TC", sans-serif;
+}
+.font-playfair {
+  font-family: "Playfair Display SC", serif;
 }
