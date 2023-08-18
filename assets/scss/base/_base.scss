@@ -13,14 +13,34 @@ a {
   color: inherit;
 }
 
-.custom-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: none;
-  color: orange;
-  border: none;
-  border-bottom: 2px solid orange;
-  cursor: pointer;
-  position: relative;
-  transition: background 0.3s, color 0.3s;
+//正常大小寫標題字
+.font-nosc-playfair {
+  font-family: "Playfair Display", serif;
 }
+//單純noto serif字體
+.font-noto-serif {
+  font-family: "Noto Serif TC", sans-serif;
+}
+
+//以下為仙貝新增
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+.background-gradient{
+  background: var(--item-mask, linear-gradient(180deg, rgba(68, 94, 73, 0.05) 0%, rgba(68, 94, 73, 0.50) 100%));
+}
+
+.text-vertical{
+  writing-mode: vertical-rl;
+}
+
+.border-radius-80{
+  border-radius: 80px 0;
+}
+
+.border-radius-40{
+  border-radius: 40px 0;
+}
+//以上為仙貝新增(8/18)
+

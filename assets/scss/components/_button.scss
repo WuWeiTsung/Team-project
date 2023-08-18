@@ -1,0 +1,120 @@
+// 客製按鈕
+.custom-btn {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+//橘色按鈕，從下方長出顏色
+.custom-btn-secondary {
+  background: none;
+  color: $secondary;
+  border-bottom: 2px solid orange;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+
+.custom-btn-secondary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: $secondary;
+  transition: height 0.3s;
+  z-index: -1;
+}
+
+.custom-btn-secondary:hover {
+  background: $secondary;
+  color: $white;
+}
+
+.custom-btn-secondary:hover::before {
+  height: 100%;
+}
+//綠色按鈕，背景文字顏色變換
+.custom-btn-primary {
+  background: $primary;
+  color: $white;
+  border-bottom: 2px solid $white;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+.custom-btn-primary::after {
+  content: "SHOP NOW";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  color: $white;
+  z-index: 2;
+}
+.custom-btn-primary:hover::after {
+  color: $primary;
+}
+.custom-btn-primary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: $white;
+  color: $primary;
+  transition: height 0.3s;
+  z-index: 1;
+}
+
+.custom-btn-primary:hover {
+  background: $white;
+  color: $primary;
+}
+
+.custom-btn-primary:hover::before {
+  height: 100%;
+}
+
+//從下方長出白色按鈕(仙貝新增)
+.custom-btn-white {
+  // background: $primary;
+  color: $white;
+  border-bottom: 2px solid $white;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+
+.custom-btn-white::after {
+  content: "SHOP NOW";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  color: $white;
+  z-index: 2;
+}
+
+.custom-btn-white:hover::after {
+  color: $primary;
+}
+
+.custom-btn-white::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: $white;
+  color: $primary;
+  transition: height 0.3s;
+  z-index: 1;
+}
+
+.custom-btn-white:hover {
+  background: $white;
+  color: $primary;
+}
+
+.custom-btn-white:hover::before {
+  height: 100%;
+}
