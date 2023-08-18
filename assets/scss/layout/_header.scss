@@ -1,7 +1,10 @@
+// * {
+//   outline: 1px solid orange;
+// }
 .logo {
   a {
     display: block;
-    background-image: url("../assets/images/logo.svg");
+    background-image: url("../assets/images/logo-white.svg");
     width: 12.5rem;
     height: 2.5rem;
     background-size: contain;
@@ -28,19 +31,39 @@
     .nav-link {
       color: #566b5a;
     }
+    .logo {
+      a {
+        background-image: url("../assets/images/logo-green.svg");
+      }
+    }
+    .header-white-icon {
+      display: none;
+    }
+    .header-green-icon {
+      display: block;
+    }
+    input {
+      &::placeholder {
+        content: "搜尋...";
+        color: $grey66;
+      }
+    }
   }
 }
-.opacity-90 {
-  opacity: 0.9;
-}
 
-//中英文字轉換
+.header-white-icon {
+  display: block;
+}
+.header-green-icon {
+  display: none;
+}
+//navbar滑過效果 中英文字轉換 顏色變化
 .nav-item {
   position: relative;
   &-en {
     opacity: 1;
     color: $white;
-    transition: opacity 0.4s ease-out;
+    transition: opacity 0.3s ease-out;
   }
   &-ch {
     position: absolute;
@@ -49,7 +72,7 @@
     right: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.4s ease-out;
+    transition: opacity 0.3s ease-out;
   }
   &:hover {
     .nav-item-en {
@@ -80,4 +103,17 @@
 }
 .no-box-shadow {
   box-shadow: none !important;
+}
+
+//collapse-menu-list
+.collapse-menu-list {
+  a {
+    transition: color 0.2s;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+.collapse-menu {
+  width: 100%;
 }
