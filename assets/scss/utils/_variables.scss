@@ -483,13 +483,13 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  21:21%,
-  20:20%,
-  28:28%,
-  87:87%,
-  50:50%,
-  60:60%,
-  100: 100%
+  21: 21%,
+  20: 20%,
+  28: 28%,
+  87: 87%,
+  50: 50%,
+  60: 60%,
+  100: 100%,
 ) !default;
 // scss-docs-end position-map
 
@@ -727,7 +727,7 @@ $headings-font-family: "Playfair Display SC", "Noto Serif TC", serif !default; /
 $headings-font-style: null !default;
 $headings-font-weight: 400 !default; // *custom //500
 $headings-line-height: 1.2 !default;
-$headings-color: inherit !default;
+$headings-color: $primary !default; //*custom //inherit
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -749,7 +749,7 @@ $display-font-sizes: (
   9: 0.075rem,
 ) !default; // *custom
 
-$display-font-family: "Montserrat", sans-serif !default; // *custom
+$display-font-family: "Montserrat", "Noto Serif TC", sans-serif !default; // *custom
 $display-font-style: null !default;
 $display-font-weight: 500 !default; // *custom //300 !default;
 $display-line-height: $headings-line-height !default;

@@ -1,6 +1,4 @@
-h1 {
-  color: $primary;
-}
+//首頁banner
 .bg-banner {
   background: url(../assets/images/img.png);
 
@@ -10,7 +8,9 @@ h1 {
   margin-right: -72px;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -500;
 }
+//標題後半圓弧型
 .bg-banner-blur {
   border-radius: 0px 500px 0px 0px;
   border-top: 1px solid var(--white, #fff);
@@ -25,11 +25,13 @@ h1 {
   height: 579px;
   left: 0;
   top: 368px;
+  z-index: 0;
 }
+//文字與社群icon
 .banner-content {
-  padding-top: 478px;
+  padding-top: 460px;
 }
-.banner-social-icon {
+.banner-icon {
   a {
     background: transparent;
     border-radius: 50%;
@@ -42,6 +44,7 @@ h1 {
     }
   }
 }
+//關於品牌左邊長條背景
 .bg-long-stripe {
   background-image: url(../images/img-about-2.png);
   width: 280px;
@@ -49,11 +52,56 @@ h1 {
   top: 824px;
   left: 100px;
 }
+//關於品牌右邊方形背景
 .bg-square-stripe {
   background-image: url(../images/img-about-4.png);
-
   width: 357px;
   height: 350px;
   top: 830px;
   right: -137px;
+}
+//關於品牌左邊圖片
+.bg-image-left {
+  background-image: url(../images/img-about-1.png);
+  width: 196px;
+  height: 300px;
+  top: 1063px;
+  left: 72px;
+}
+//關於品牌右邊圖片
+.bg-image-right {
+  background-image: url(../images/img-about-3.png);
+  width: 416px;
+  height: 128px;
+  top: 940px;
+  right: 72px;
+}
+.about-me {
+  padding-top: 89px;
+  padding-bottom: 34px;
+}
+//裝飾圈圈旋轉
+.deco-spin {
+  &:hover {
+    .deco-circle {
+      animation: rotate 3s linear infinite;
+    }
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+//綠羊裝飾
+.deco-sheep {
+  img {
+    width: 155px;
+    height: auto;
+    bottom: 0;
+    right: 50px;
+  }
 }

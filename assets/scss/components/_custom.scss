@@ -1,10 +1,7 @@
-.custom-bg-gradient {
+//背景米色漸層
+.background-gradient {
   background: linear-gradient(180deg, #e5e5e5, #f4ede1, #f4f0e8, #f4f4ee);
   max-width: 100%;
   height: auto;
-  z-index: -100;
-}
-
-.font-nosc-playfair {
-  font-family: "Playfair Display", serif;
+  z-index: -1000;
 }

@@ -13,9 +13,11 @@ a {
   color: inherit;
 }
 
+//正常大小寫標題字
+.font-nosc-playfair {
+  font-family: "Playfair Display", serif;
+}
+//單純noto serif字體
 .font-noto-serif {
   font-family: "Noto Serif TC", sans-serif;
-}
-.font-playfair {
-  font-family: "Playfair Display SC", serif;
 }
