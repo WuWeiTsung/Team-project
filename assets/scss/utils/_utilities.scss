@@ -922,13 +922,15 @@ $utilities: map-merge(
           50: 50%,
         ),
       ),
-    "background-position": (
+
+    "background-position": （
       property: background-position,
       class: bg-position,
       values: (
         center: center center,
       ),
     ),
+
     "backdrop-blur": (
       property: backdrop-filter,
       values: (

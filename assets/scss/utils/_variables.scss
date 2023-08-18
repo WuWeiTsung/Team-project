@@ -483,13 +483,18 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  21: 21%,
-  20: 20%,
-  28: 28%,
-  87: 87%,
-  50: 50%,
-  60: 60%,
+  2:1.8%,
+  15:15%, 
+  20:20%,
+  21:21%,
+  28:28%,
+  50:50%,
+  53:53%, 
+  60:60%,
+  87:87%,
+  93:93%,
   100: 100%,
+  n2:-2%,
 ) !default;
 // scss-docs-end position-map
 
@@ -742,7 +747,7 @@ $display-font-sizes: (
   //3.5rem,
   5: 1.25rem,
   //3rem,
-  6: 1.15rem,
+  6: 1.125rem,
   //2.5rem,
   7: 1rem,
   8: 0.875rem,
