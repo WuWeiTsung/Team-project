@@ -13,12 +13,15 @@ a {
   color: inherit;
 }
 
+//正常大小寫標題字
+.font-nosc-playfair {
+  font-family: "Playfair Display", serif;
+}
+//單純noto serif字體
 .font-noto-serif {
   font-family: "Noto Serif TC", sans-serif;
 }
-.font-playfair {
-  font-family: "Playfair Display SC", serif;
-}
+
 //以下為仙貝新增
 .backdrop-blur {
   backdrop-filter: blur(10px);
@@ -40,3 +43,4 @@ a {
   border-radius: 40px 0;
 }
 //以上為仙貝新增(8/18)
+
