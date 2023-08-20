@@ -483,13 +483,13 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  21:21%,
-  20:20%,
-  28:28%,
-  87:87%,
-  50:50%,
-  60:60%,
-  100: 100%
+  21: 21%,
+  20: 20%,
+  28: 28%,
+  87: 87%,
+  50: 50%,
+  60: 60%,
+  100: 100%,
 ) !default;
 // scss-docs-end position-map
 
@@ -746,10 +746,10 @@ $display-font-sizes: (
   //2.5rem,
   7: 1rem,
   8: 0.875rem,
-  9: 0.075rem,
+  9: 0.75rem,
 ) !default; // *custom
 
-$display-font-family: "Montserrat", sans-serif !default; // *custom
+$display-font-family: "Montserrat", "Noto Serif TC", sans-serif !default; // *custom
 $display-font-style: null !default;
 $display-font-weight: 500 !default; // *custom //300 !default;
 $display-line-height: $headings-line-height !default;
