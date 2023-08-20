@@ -1,0 +1,33 @@
+.h-border{
+    position: relative;
+}
+
+// .h-border::before,
+.h-border::after{
+    position: absolute;
+    content:"";
+    top:0.75rem;
+    bottom:0.75rem;
+    left:0.75rem;
+    right:0.75rem;
+    border: 2px solid #fff;
+    border-radius: 60px 0;
+    opacity: 0;
+    transition: opacity 1 ease-out;
+    
+}
+
+.h-border:hover{
+    cursor: pointer;
+    border-radius: 60px 0;
+    overflow: hidden;
+    transition: transform 1 ease-out;
+    transform: scale(1.05);
+}
+
+
+// .h-border:hover::before,
+.h-border:hover::after{
+    transition: opacity 1 ease-out;
+    opacity: 1;
+}
