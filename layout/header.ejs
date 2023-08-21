@@ -3,41 +3,31 @@
 </div>
 
 <nav
-  class="navbar navbar-expand-lg navbar-light backdrop-blur-10 bg-blur navbar-hover py-3 flex-column"
+  class="navbar navbar-expand-lg navbar-light bg-blur navbar-hover py-3 flex-column"
 >
   <!-- logo -->
   <div class="container">
-    <h1 class="logo mb-0 me-8">
+    <h1 class="logo mb-0 me-lg-8">
       <a class="navbar-brand" href="index.html">Green Sheep handmade jewelry</a>
     </h1>
-    <!-- menu icon 在sm時出現-->
-    <button
-      class="navbar-toggler no-box-shadow"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="material-icons border-0 text-primary no-box-shadow"
-        >menu</span
-      >
-    </button>
     <!-- menu -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto gap-4">
         <li class="collapse-container nav-item" style="min-width: 101px">
-          <a
-            class="nav-link nav-item-en py-1 px-2"
-            data-bs-toggle="collapse"
-            href="#collapseExample"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          >
-            SHOP
-          </a>
+          <div class="d-flex justify-content-end">
+            <a
+              class="nav-link nav-item-en py-1 px-2"
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              SHOP
+            </a>
+            <span class="material-icons dropdown-icon px-1"> expand_more </span>
+          </div>
+
           <a
             class="nav-link nav-item-ch py-1 px-2"
             data-bs-toggle="collapse"
@@ -82,49 +72,65 @@
       </ul>
     </div>
     <!-- 右側icon -->
-    <div class="header-icon d-flex align-items-center">
-      <!-- 搜尋欄 -->
-      <form class="header-form me-2">
-        <div class="input-group d-flex align-items-center">
+    <div class="d-flex">
+      <div class="header-icon d-flex align-items-center">
+        <!-- 搜尋欄 -->
+        <form class="header-form me-2">
+          <div class="input-group d-flex align-items-center">
+            <img
+              class="header-white-icon"
+              src="../assets/images/ic-search-white.svg"
+              alt="搜尋欄"
+            />
+            <img
+              class="header-green-icon"
+              src="../assets/images/ic-search-green.svg"
+              alt="搜尋欄"
+            />
+            <input
+              type="text"
+              class="form-control no-box-shadow search-box input-group-text bg-transparent text-start d-none d-lg-block"
+              placeholder="search..."
+            />
+          </div>
+        </form>
+        <!-- 會員中心 -->
+        <a class="me-2 d-none d-lg-block" href="8-1.memLogin.html"
+          ><img
+            class="header-white-icon p-2"
+            src="../assets/images/ic-person-white.svg"
+            alt="會員中心" />
           <img
-            class="header-white-icon"
-            src="../assets/images/ic-search-white.svg"
-            alt="搜尋欄"
-          />
+            class="header-green-icon p-2"
+            src="../assets/images/ic-person-green.svg"
+            alt="會員中心"
+        /></a>
+        <!-- 購物車 -->
+        <a href="7-2.shopCart.html"
+          ><img
+            class="header-white-icon p-2"
+            src="../assets/images/ic-cart-white.svg"
+            alt="購物袋" />
           <img
-            class="header-green-icon"
-            src="../assets/images/ic-search-green.svg"
-            alt="搜尋欄"
-          />
-          <input
-            type="text"
-            class="form-control no-box-shadow search-box input-group-text bg-transparent text-start"
-            placeholder="search..."
-          />
-        </div>
-      </form>
-      <!-- 會員中心 -->
-      <a class="me-2" href="8-1.memLogin.html"
-        ><img
-          class="header-white-icon p-2"
-          src="../assets/images/ic-person-white.svg"
-          alt="會員中心" />
-        <img
-          class="header-green-icon p-2"
-          src="../assets/images/ic-person-green.svg"
-          alt="會員中心"
-      /></a>
-      <!-- 購物車 -->
-      <a href="7-2.shopCart.html"
-        ><img
-          class="header-white-icon p-2"
-          src="../assets/images/ic-cart-white.svg"
-          alt="購物袋" />
-        <img
-          class="header-green-icon p-2"
-          src="../assets/images/ic-cart-green.svg"
-          alt="購物袋"
-      /></a>
+            class="header-green-icon p-2"
+            src="../assets/images/ic-cart-green.svg"
+            alt="購物袋"
+        /></a>
+      </div>
+      <!-- menu icon 在sm時出現-->
+      <button
+        class="navbar-toggler no-box-shadow border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="menu-icon material-icons border-0 no-box-shadow"
+          >menu</span
+        >
+      </button>
     </div>
   </div>
 </nav>
@@ -169,4 +175,3 @@
     </div>
   </div>
 </div>
-<div class="collapse-overlay"></div>

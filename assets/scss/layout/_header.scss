@@ -1,6 +1,3 @@
-// * {
-//   outline: 1px solid orange;
-// }
 .logo {
   a {
     display: block;
@@ -16,15 +13,12 @@
   }
 }
 
-.bg-blur {
-  background: rgba(20, 20, 20, 0.2);
-  backdrop-filter: blur(10px);
-}
+// navbar 滑過時的效果
 .navbar-hover {
   background: rgba(20, 20, 20, 0.2);
   transition: background-color 0.3s, color 0.3s;
   border-bottom: 1px solid transparent;
-
+  z-index: 2;
   &:hover {
     background: $light;
     border-bottom: 1px solid $greyD4;
@@ -48,7 +42,31 @@
         color: $grey66;
       }
     }
+    .dropdown-icon {
+      color: $primary;
+      opacity: 1;
+    }
+    .menu-icon {
+      color: $primary;
+    }
   }
+}
+.menu-icon {
+  color: $white;
+}
+
+.bg-blur {
+  background: rgba(20, 20, 20, 0.2);
+  backdrop-filter: blur(10px);
+  @include pad {
+    background: rgba(20, 20, 20, 0.3);
+  }
+}
+.dropdown-icon {
+  color: $white;
+  opacity: 0;
+  width: 18px;
+  height: 18px;
 }
 
 .header-white-icon {
@@ -57,7 +75,7 @@
 .header-green-icon {
   display: none;
 }
-//navbar滑過效果 中英文字轉換 顏色變化
+//中英文字轉換
 .nav-item {
   position: relative;
   &-en {
@@ -90,6 +108,9 @@
 .header-form {
   .input-group {
     border-bottom: 1px solid $white;
+    @include pad {
+      border-bottom: 0px;
+    }
   }
   .form-control {
     // box-shadow: none;
@@ -106,6 +127,9 @@
 }
 
 //collapse-menu-list
+.collapse-menu {
+  width: 100%;
+}
 .collapse-menu-list {
   a {
     transition: color 0.2s;
@@ -113,7 +137,4 @@
       color: $primary;
     }
   }
-}
-.collapse-menu {
-  width: 100%;
 }

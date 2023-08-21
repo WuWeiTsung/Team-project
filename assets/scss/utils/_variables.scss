@@ -473,6 +473,8 @@ $spacers: (
   22: $spacer * 22,
   23: $spacer * 23,
   24: $spacer * 24,
+  100: $spacer * 100,
+  -60: $spacer * -60,
 ) !default; // *custom
 // scss-docs-end spacer-variables-maps
 
@@ -483,18 +485,19 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  2:1.8%,
-  15:15%, 
-  20:20%,
-  21:21%,
-  28:28%,
-  50:50%,
-  53:53%, 
-  60:60%,
-  87:87%,
-  93:93%,
+  2: 1.8%,
+  10: 10%,
+  15: 15%,
+  20: 20%,
+  21: 21%,
+  28: 28%,
+  50: 50%,
+  53: 53%,
+  60: 60%,
+  87: 87%,
+  93: 93%,
   100: 100%,
-  n2:-2%,
+  n2: -2%,
 ) !default;
 // scss-docs-end position-map
 
