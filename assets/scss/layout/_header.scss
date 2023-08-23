@@ -68,6 +68,14 @@
   width: 18px;
   height: 18px;
 }
+//全部商品下拉選單
+.custom-dropdown-menu {
+  a {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
 
 .header-white-icon {
   display: block;
@@ -138,3 +146,33 @@
     }
   }
 }
+
+// .side-collapse-container-right {
+//   @include pad {
+//     position: relative;
+//     right: 0;
+//     transition: right 0.4s;
+//   }
+// }
+// .side-collapse-container-right.out {
+//   @include pad {
+//     right: 85%;
+//   }
+// }
+
+// .side-collapse-right {
+//   @include pad {
+//     top: 50px;
+//     bottom: 0;
+//     right: 0;
+//     width: 85%;
+//     position: fixed;
+//     overflow: hidden;
+//     transition: width 0.4s;
+//   }
+// }
+// .side-collapse-right.in {
+//   @include pad {
+//     width: 0;
+//   }
+// }

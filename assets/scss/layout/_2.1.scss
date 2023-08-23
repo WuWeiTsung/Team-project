@@ -1,0 +1,37 @@
+.aside-menu {
+  a {
+    // 裝飾線
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $primary;
+      transform: scalex(0); //Ｘ軸為基準，物件尺寸0
+      transform-origin: left; //起始點由左側開始
+      transition: transform 0.4s ease;
+    }
+    &:hover::after {
+      transform: scalex(1); //Ｘ軸為基準，物件尺寸100%
+    }
+  }
+}
+
+.color-choose {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid $light;
+  background-color: $deco;
+}
+.color-gold {
+  background-color: $deco;
+}
+.color-silver {
+  background-color: $grey9F;
+}
+// .card-body {
+//   display: flex;
+//   flex-direction: column;
+// }

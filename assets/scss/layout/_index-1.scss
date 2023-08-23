@@ -27,32 +27,32 @@
 
 // 手機主要圖片
 .bg-main-pic-mobile {
-  top: -65px;
+  top: -1px;
   width: 100%;
 }
 //首圖背景色塊
 //左側色塊
 .bg-left-stripe {
-  top: -64px;
+  top: 0px;
   left: 110px;
   z-index: -500;
 }
 // 右側色塊
 .bg-right-stripe {
-  top: -64px;
+  top: 0px;
   right: -72px;
   z-index: -500;
 }
 //首圖背景圖片
 //左側圖片
 .bg-left-pic {
-  top: 128px;
+  top: 192px;
   left: 0;
 }
 
 //主要圖片
 .bg-main-pic {
-  top: 36px;
+  top: 100px;
   z-index: -1;
 }
 

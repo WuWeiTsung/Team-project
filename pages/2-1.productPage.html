@@ -1,1 +1,182 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>GreenSheep handmade jewelry</title>
+  </head>
+
+  <body>
+    <div class="background-gradient">
+      <%- include('./layout/header'); -%>
+      <!-- 首圖Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../assets/images/swiper-banner-1.jpg" alt="金色鏈子" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/swiper-banner-2.jpg"
+              alt="金色多層次項鍊"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/swiper-banner-3.jpg"
+              alt="金色白殼耳環"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../assets/images/swiper-banner-6.jpg"
+              alt="純銀拉花項鍊"
+            />
+          </div>
+        </div>
+        <!-- 左右箭頭 -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <!-- 分頁點點 -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <main class="container">
+        <div class="row py-7 py-lg-10">
+          <!-- 側邊目錄 -->
+          <aside class="aside-menu d-none d-lg-block col-lg-3">
+            <ul class="d-none d-md-block list-unstyled text-dark text-start">
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#"
+                  >全部商品 All products</a
+                >
+              </li>
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#">戒指 Rings</a>
+              </li>
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#">耳環 Earrings</a>
+              </li>
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#">手環 Bracelet</a>
+              </li>
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#">項鍊 Necklace</a>
+              </li>
+              <li class="d-inline-block py-2 mx-3"></li>
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#">925純銀 Silver</a>
+              </li>
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#">14K金 14K-Gold</a>
+              </li>
+              <li>
+                <a class="d-inline-block py-2 mx-3" href="#">18K金 18K-Gold</a>
+              </li>
+              <li class="d-inline-block py-2 mx-3"></li>
+              <li><a class="d-inline-block py-2 mx-3" href="#">客製設計</a></li>
+            </ul>
+          </aside>
+          <div class="col-lg-9 py-2">
+            <!-- 麵包屑導航 -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  全部商品
+                </li>
+              </ol>
+            </nav>
+            <!-- 商品列表 -->
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card border-0 bg-transparent">
+                  <img
+                    src="../assets/images/products/product-1.jpg"
+                    class="card-img-top"
+                    alt="蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊"
+                  />
+                  <div class="card-body text-start flex-grow-1">
+                    <h5 class="card-title display-8 text-dark pt-2">
+                      蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊
+                    </h5>
+                    <p class="card-text display-8 text-primary py-2">
+                      NT$3,800
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 bg-transparent">
+                  <img
+                    src="../assets/images/products/product-2.jpg"
+                    class="card-img-top"
+                    alt="鯨湛 - Brave | 拉利瑪海紋石純銀項鍊"
+                  />
+                  <div class="card-body text-start flex-grow-1">
+                    <h5 class="card-title display-8 text-dark pt-2">
+                      鯨湛 - Brave | 拉利瑪海紋石純銀項鍊
+                    </h5>
+                    <p class="card-text display-8 text-primary py-2">
+                      NT$3,800
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 bg-transparent">
+                  <img
+                    src="../assets/images/products/product-3.jpg"
+                    class="card-img-top"
+                    alt="貓貓是神｜ 925純銀項鍊"
+                  />
+                  <div class="card-body text-start flex-grow-1">
+                    <h5 class="card-title flex-grow-1 display-8 text-dark pt-2">
+                      貓貓是神｜925純銀項鍊
+                    </h5>
+                    <p class="card-text display-8 text-primary py-2">
+                      NT$1,380
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 bg-transparent">
+                  <img
+                    src="../assets/images/products/product-4.jpg"
+                    class="card-img-top"
+                    alt="蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊"
+                  />
+                  <div class="card-body text-start flex-grow-1">
+                    <h5 class="card-title display-8 text-dark pt-2">
+                      永恆經典結婚對戒｜18K金＋鑽石
+                    </h5>
+                    <span class="color-choose color-gold me-1"></span
+                    ><span class="color-choose color-silver"></span>
+                    <p class="card-text display-8 text-primary py-2">
+                      NT$38,800起
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
