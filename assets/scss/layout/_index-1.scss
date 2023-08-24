@@ -35,13 +35,13 @@
 .bg-left-stripe {
   top: 0px;
   left: 110px;
-  z-index: -500;
+  z-index: 0;
 }
 // 右側色塊
 .bg-right-stripe {
   top: 0px;
   right: -72px;
-  z-index: -500;
+  z-index: 0;
 }
 //首圖背景圖片
 //左側圖片
@@ -53,7 +53,7 @@
 //主要圖片
 .bg-main-pic {
   top: 100px;
-  z-index: -1;
+  z-index: 0;
 }
 
 //右側圖片
@@ -130,6 +130,7 @@
 .banner-content {
   padding-top: 478px;
   padding-bottom: 304px;
+  z-index: 1;
   @include pad {
     padding-top: 543px;
     padding-bottom: 40px;

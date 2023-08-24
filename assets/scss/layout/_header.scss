@@ -51,45 +51,38 @@
     }
   }
 }
-.menu-icon {
-  color: $white;
-}
 
-.bg-blur {
-  background: rgba(20, 20, 20, 0.2);
-  backdrop-filter: blur(10px);
-  @include pad {
-    background: rgba(20, 20, 20, 0.3);
-  }
-}
-.dropdown-icon {
-  color: $white;
-  opacity: 0;
-  width: 18px;
-  height: 18px;
-}
 //全部商品下拉選單
 .custom-dropdown-menu {
+  background: $light;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transform: translateX(-50%);
+  @include pad {
+    background: transparent;
+    box-shadow: none;
+    transform: translateX(25%);
+  }
   a {
     &:hover {
+      color: $primary;
+    }
+    @include pad {
       color: $primary;
     }
   }
 }
 
-.header-white-icon {
-  display: block;
-}
-.header-green-icon {
-  display: none;
-}
 //中英文字轉換
+
 .nav-item {
   position: relative;
   &-en {
     opacity: 1;
     color: $white;
     transition: opacity 0.3s ease-out;
+    @include pad {
+      opacity: 0;
+    }
   }
   &-ch {
     position: absolute;
@@ -99,6 +92,10 @@
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease-out;
+    @include pad {
+      opacity: 1;
+      font-family: "Montserrat", sans-serif;
+    }
   }
   &:hover {
     .nav-item-en {
@@ -115,37 +112,47 @@
 // header icon
 .header-form {
   .input-group {
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $greyD4;
     @include pad {
       border-bottom: 0px;
     }
   }
   .form-control {
-    // box-shadow: none;
-    caret-color: #566b5a;
+    caret-color: #566b5a; //改變光標顏色
   }
 }
 .search-box {
   &::placeholder {
     color: $white;
+    font-size: 14px;
   }
+}
+.header-white-icon {
+  display: block;
+}
+.header-green-icon {
+  display: none;
 }
 .no-box-shadow {
   box-shadow: none !important;
 }
+//menu-icon 漢堡選單
+.menu-icon {
+  color: $white;
+}
 
-//collapse-menu-list
-.collapse-menu {
-  width: 100%;
-}
-.collapse-menu-list {
-  a {
-    transition: color 0.2s;
-    &:hover {
-      color: $primary;
-    }
-  }
-}
+// //collapse-menu-list
+// .collapse-menu {
+//   width: 100%;
+// }
+// .collapse-menu-list {
+//   a {
+//     transition: color 0.2s;
+//     &:hover {
+//       color: $primary;
+//     }
+//   }
+// }
 
 // .side-collapse-container-right {
 //   @include pad {

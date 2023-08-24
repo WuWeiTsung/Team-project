@@ -16,7 +16,7 @@
     <div class="background-gradient">
       <%- include('./layout/header'); -%>
       <!-- 首圖Swiper -->
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper" style="margin-top: -65px">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="../assets/images/swiper-banner-1.jpg" alt="金色鏈子" />
@@ -95,74 +95,97 @@
             </nav>
             <!-- 商品列表 -->
             <div class="row row-cols-2 row-cols-md-4 g-4">
-              <div class="col">
-                <div class="card border-0 bg-transparent">
+              <a
+                href="#"
+                class="col d-flex flex-column product-item"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="600"
+              >
+                <div class="product">
                   <img
                     src="../assets/images/products/product-1.jpg"
-                    class="card-img-top"
+                    class="card-img-top product-image1 position-relative"
                     alt="蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊"
                   />
-                  <div class="card-body text-start flex-grow-1">
-                    <h5 class="card-title display-8 text-dark pt-2">
-                      蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊
-                    </h5>
-                    <p class="card-text display-8 text-primary py-2">
-                      NT$3,800
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card border-0 bg-transparent">
                   <img
-                    src="../assets/images/products/product-2.jpg"
-                    class="card-img-top"
-                    alt="鯨湛 - Brave | 拉利瑪海紋石純銀項鍊"
-                  />
-                  <div class="card-body text-start flex-grow-1">
-                    <h5 class="card-title display-8 text-dark pt-2">
-                      鯨湛 - Brave | 拉利瑪海紋石純銀項鍊
-                    </h5>
-                    <p class="card-text display-8 text-primary py-2">
-                      NT$3,800
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card border-0 bg-transparent">
-                  <img
-                    src="../assets/images/products/product-3.jpg"
-                    class="card-img-top"
-                    alt="貓貓是神｜ 925純銀項鍊"
-                  />
-                  <div class="card-body text-start flex-grow-1">
-                    <h5 class="card-title flex-grow-1 display-8 text-dark pt-2">
-                      貓貓是神｜925純銀項鍊
-                    </h5>
-                    <p class="card-text display-8 text-primary py-2">
-                      NT$1,380
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card border-0 bg-transparent">
-                  <img
-                    src="../assets/images/products/product-4.jpg"
-                    class="card-img-top"
+                    src="../assets/images/products/product-1-1.JPG"
+                    class="card-img-top product-image2 position-absolute top-0 start-0"
                     alt="蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊"
                   />
-                  <div class="card-body text-start flex-grow-1">
-                    <h5 class="card-title display-8 text-dark pt-2">
-                      永恆經典結婚對戒｜18K金＋鑽石
-                    </h5>
+                </div>
+                <div
+                  class="card-body text-start d-flex flex-column justify-content-between p-1 flex-grow-1"
+                >
+                  <h5 class="card-title display-8 text-dark pt-2">
+                    蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊
+                  </h5>
+                  <p class="card-text display-8 text-primary py-2">NT$3,800</p>
+                </div>
+              </a>
+              <div
+                class="col d-flex flex-column"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
+                <img
+                  src="../assets/images/products/product-2.jpg"
+                  class="card-img-top"
+                  alt="鯨湛 - Brave | 拉利瑪海紋石純銀項鍊"
+                />
+                <div
+                  class="card-body text-start d-flex flex-column justify-content-between p-1 flex-grow-1"
+                >
+                  <h5 class="card-title display-8 text-dark pt-2">
+                    鯨湛 - Brave | 拉利瑪海紋石純銀項鍊
+                  </h5>
+                  <p class="card-text display-8 text-primary py-2">NT$3,800</p>
+                </div>
+              </div>
+              <div
+                class="col d-flex flex-column"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                <img
+                  src="../assets/images/products/product-3.jpg"
+                  class="card-img-top"
+                  alt="貓貓是神｜ 925純銀項鍊"
+                />
+                <div
+                  class="card-body text-start d-flex flex-column justify-content-between p-1 flex-grow-1"
+                >
+                  <h5 class="card-title flex-grow-1 display-8 text-dark pt-2">
+                    貓貓是神｜925純銀項鍊
+                  </h5>
+                  <p class="card-text display-8 text-primary py-2">NT$1,380</p>
+                </div>
+              </div>
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="600"
+              >
+                <img
+                  src="../assets/images/products/product-4.jpg"
+                  class="card-img-top"
+                  alt="蔚藍海洋 - Freedom | 拉利瑪海紋石純銀項鍊"
+                />
+                <div
+                  class="card-body text-start d-flex flex-column justify-content-between p-1 flex-grow-1"
+                >
+                  <h5 class="card-title display-8 text-dark pt-2">
+                    永恆經典結婚對戒｜18K金＋鑽石
+                  </h5>
+                  <div>
                     <span class="color-choose color-gold me-1"></span
                     ><span class="color-choose color-silver"></span>
-                    <p class="card-text display-8 text-primary py-2">
-                      NT$38,800起
-                    </p>
                   </div>
+                  <p class="card-text display-8 text-primary py-2">
+                    NT$38,800起
+                  </p>
                 </div>
               </div>
             </div>
