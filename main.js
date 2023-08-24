@@ -2,6 +2,7 @@ import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 console.log("Hello world!");
+
 // Banner 輪播
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
@@ -23,3 +24,4 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+

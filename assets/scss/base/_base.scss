@@ -28,6 +28,7 @@ a {
   backdrop-filter: blur(10px);
 }
 
+
 .green-gradient {
   background: var(
     --item-mask,
@@ -38,6 +39,7 @@ a {
     )
   );
 }
+
 
 .text-vertical {
   writing-mode: vertical-rl;
