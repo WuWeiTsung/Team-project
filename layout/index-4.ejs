@@ -1,32 +1,87 @@
 <!-- 文章專欄及客戶好評 -->
-<!-- 文章專欄 -->
-<div class="container">
-  <div>
-    <a href="#">
-      <img src="../assets/images/img-person.png" alt="文章圖片" />
-      <p># News from GreenSheep</p>
-    </a>
-  </div>
-  <div>
-    <a href="#">
-      <img src="../assets/images/img-article-1.png" alt="文章圖片" />
-      <p>一件作品是怎麼誕生的呢？帶你一窺工藝師傅的工作日常</p>
-    </a>
-    <a href="#">
-      <img src="../assets/images/img-article-2.png" alt="文章圖片" />
-      <p>誕生石幫你傳達專屬心意</p>
-    </a>
-    <a href="#">
-      <img src="../assets/images/img-article-3.png" alt="文章圖片" />
-      <p>讓珠寶成為你的能量與活力</p>
-    </a>
-    <a href="#">
-      <img src="../assets/images/img-about-font-bg.svg" alt="文章圖片" />
-      <div>
-        <img src="../assets/images/logo.svg" alt="logo" />
-        <p>更多文章</p>
+<div class="container-fluid">
+  <!-- 文章專欄 -->
+  <div class="container-lg py-10 px-0">
+    <div class="py-5 d-lg-flex">
+      <!-- article top&left -->
+      <div class="card text-white">
+        <img src="../assets/images/img-person.png" class="card-img" alt="..." />
+        <div
+          class="card-img-overlay d-flex flex-column justify-content-end white-border"
+        >
+          <p class="card-text"># News from GreenSheep</p>
+        </div>
       </div>
-      <button>Discover More</button>
-    </a>
+      <div class="article-tl position-relative mb-6 me-lg-6">
+        <a href="#">
+          <img
+            class="article-tl-img"
+            src="../assets/images/img-person.png"
+            alt="文章圖片"
+          />
+          <div class="article-tl-title border position-absolute">
+            <p class="text-start position-absolute display-7 text-white">
+              # News from GreenSheep
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- article bottom&right -->
+      <ul
+        class="article-br list-unstyled d-flex flex-column justify-content-lg-between"
+      >
+        <div class="d-flex mb-4 mb-lg-6">
+          <li class="me-4 me-lg-6 position-relative">
+            <a href="#">
+              <img src="../assets/images/img-article-1.png" alt="文章圖片" />
+              <div class="article-br-title first-child position-absolute">
+                <p class="text-white">
+                  一件作品是怎麼誕生的呢？帶<span class="span-one">···</span
+                  ><span class="span-two">你一窺工藝師傅的工作日常</span>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="position-relative">
+            <a href="#">
+              <img src="../assets/images/img-article-2.png" alt="文章圖片" />
+              <div class="article-br-title position-absolute">
+                <p class="text-white">誕生石幫你傳達專屬心意</p>
+              </div>
+            </a>
+          </li>
+        </div>
+        <div class="d-flex">
+          <li class="me-4 me-lg-6 position-relative">
+            <a href="#">
+              <img src="../assets/images/img-article-3.png" alt="文章圖片" />
+              <div class="article-br-title position-absolute">
+                <p class="text-white">讓珠寶成為你的能量與活力</p>
+              </div>
+            </a>
+          </li>
+          <li class="more-article position-relative">
+            <a href="#">
+              <img
+                src="../assets/images/img-about-font-bg.svg"
+                alt="文章圖片"
+                class="object-fit-contain"
+              />
+              <div
+                class="more-article-content position-absolute d-flex flex-column justify-content-center align-items-center"
+              >
+                <img src="../assets/images/logo.svg" alt="logo" class="mb-3" />
+                <p class="display-7 text-primary">更多文章</p>
+              </div>
+              <div class="more-article-btn d-flex position-absolute">
+                <a href="#" class="py-2 px-3">
+                  <p class="display-8">Discover More</p>
+                </a>
+              </div>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
   </div>
 </div>

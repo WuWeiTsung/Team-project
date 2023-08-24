@@ -1,0 +1,197 @@
+/* 電腦版 */
+// 文章專欄
+// top&left
+.white-border {
+  width: 311px;
+  height: 480px;
+  border: 1px solid $white;
+  border-radius: 40px 0px;
+}
+.article-tl {
+  &-img {
+    width: 416px;
+    height: 640px;
+  }
+  &-title {
+    width: 376px;
+    height: 580px;
+    top: 30px;
+    left: 20px;
+    border-radius: 40px 0px;
+    p {
+      bottom: 16px;
+      left: 16px;
+      letter-spacing: 0.32px;
+    }
+  }
+}
+// bottom&right
+.article-br {
+  img {
+    width: 416px; /* 图片的最大宽度为父元素的宽度 */
+    height: 400px;
+    object-fit: cover;
+  }
+  &-title {
+    left: 20px;
+    bottom: 56px;
+    right: 20px;
+    p {
+      font-family: Noto Serif TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      text-align: start;
+      line-height: 200%; /* 36px */
+      letter-spacing: 0.36px;
+    }
+    .span-one {
+      display: none;
+    }
+  }
+}
+// 兩行字bottom值不一樣
+.first-child {
+  bottom: 20px;
+}
+.more-article {
+  border: 1px solid $decolight;
+  &-content {
+    width: 140px;
+    top: 90.5px;
+    left: 13.75px;
+    img {
+      height: 28px;
+      padding: 1.4px 2.38px 0px 2.8px;
+    }
+  }
+  .more-article {
+    &-btn {
+      width: 129px;
+      height: 33px;
+      border-bottom: 1px solid $secondary;
+      right: 19px;
+      bottom: 48px;
+
+      p {
+        color: $secondary;
+        line-height: 120%; /* 16.8px */
+        letter-spacing: 0.28px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        background: $secondary;
+        transition: height 0.3s;
+        z-index: -1;
+      }
+      &:hover {
+        background-color: $secondary;
+        p {
+          color: $white;
+        }
+      }
+      &:hover::before {
+        height: 100%;
+      }
+    }
+  }
+}
+/* 手機版 */
+@include mobile {
+  // 文章專欄
+  // top&left
+  .article-tl {
+    &-img {
+      width: 351px;
+      height: 520px;
+    }
+    &-title {
+      width: 311px;
+      height: 480px;
+      top: 20px;
+      left: 20px;
+      border-radius: 40px 0px;
+      /*p {
+        bottom: 16px;
+        left: 16px;
+        letter-spacing: 0.32px;
+      }*/
+    }
+  }
+  // bottom&right
+  .article-br {
+    img {
+      width: 167.5px;
+      height: 240px;
+    }
+    &-title {
+      left: 16px;
+      bottom: 16px;
+      right: 16px;
+      p {
+        font-family: Noto Serif TC;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: start;
+        line-height: 200%; /* 36px */
+        letter-spacing: 0.36px;
+      }
+      .span-two {
+        display: none;
+      }
+    }
+  }
+  .more-article {
+    border: 1px solid $decolight;
+    &-content {
+      width: 140px;
+      top: 90.5px;
+      left: 13.75px;
+      img {
+        height: 28px;
+        padding: 1.4px 2.38px 0px 2.8px;
+      }
+    }
+    .more-article {
+      &-btn {
+        width: 129px;
+        height: 33px;
+        border-bottom: 1px solid $secondary;
+        right: 19px;
+        bottom: 48px;
+
+        p {
+          color: $secondary;
+          line-height: 120%; /* 16.8px */
+          letter-spacing: 0.28px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 0;
+          background: $secondary;
+          transition: height 0.3s;
+          z-index: -1;
+        }
+        &:hover {
+          background-color: $secondary;
+          p {
+            color: $white;
+          }
+        }
+        &:hover::before {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
