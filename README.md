@@ -2,7 +2,7 @@
 
 -   統一使用『Prettier』外掛自動格式系統
     ![](./assets/images/image.png)
--   所有 class 命名方式使用：小駝峰 (ex:menuList,pageItem,pageItemList)
+-   所有 class 命名方式使用：烤串 (ex:menu-list)
 -   使用 OOCSS、SMACSS、BEM 讓架構與樣式分離
 -   如非共用名稱，可依 html 名稱當作統一前綴詞，避免與其他分頁名稱相同互相干擾。
 -   客製化 bootstrap 項目：https://hackmd.io/6rSCMX9xQ5Cg_OaJ9WISoQ

@@ -8,11 +8,9 @@
 //bootstrap5設定區
 @import "../../node_modules/bootstrap/scss/functions";
 
-
 //bootstrap客製化區(helpers)
 @import "./utils/variables";
 @import "./utils/index-3.scss";
-
 
 //客製化variables放在這
 @import "./utils/variables";
@@ -25,7 +23,9 @@
 //客製化元件components放在這
 @import "./components/custom";
 @import "./components/button";
+@import "./components/breadcrumb.scss";
 @import "./components/hover-border";
+
 
 //bootstrap5全部內容
 @import "../../node_modules/bootstrap";
@@ -39,6 +39,7 @@
 //layout css區
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+@import "./layout/2.1";
 @import "./layout/index-1";
 
 //pages css區
