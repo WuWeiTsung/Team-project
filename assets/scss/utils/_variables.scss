@@ -483,13 +483,21 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  21: 21%,
+  2: 1.8%,
+  10: 10%,
+  15: 15%,
   20: 20%,
+  21: 21%,
+  27: 27%,
   28: 28%,
-  87: 87%,
+  33: 33%,
   50: 50%,
+  53: 53%,
   60: 60%,
+  87: 87%,
+  93: 93%,
   100: 100%,
+  n2: -2%,
 ) !default;
 // scss-docs-end position-map
 
@@ -727,7 +735,7 @@ $headings-font-family: "Playfair Display SC", "Noto Serif TC", serif !default; /
 $headings-font-style: null !default;
 $headings-font-weight: 400 !default; // *custom //500
 $headings-line-height: 1.2 !default;
-$headings-color: inherit !default;
+$headings-color: $primary !default; //*custom //inherit
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -742,7 +750,7 @@ $display-font-sizes: (
   //3.5rem,
   5: 1.25rem,
   //3rem,
-  6: 1.15rem,
+  6: 1.125rem,
   //2.5rem,
   7: 1rem,
   8: 0.875rem,
