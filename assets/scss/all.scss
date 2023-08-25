@@ -25,7 +25,7 @@
 @import "./components/button";
 @import "./components/breadcrumb.scss";
 @import "./components/hover-border";
-
+@import "./components/pagination";
 
 //bootstrap5全部內容
 @import "../../node_modules/bootstrap";
@@ -39,7 +39,6 @@
 //layout css區
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
-@import "./layout/2.1";
 @import "./layout/index-1";
 
 //pages css區

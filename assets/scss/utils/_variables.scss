@@ -485,19 +485,19 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  2:1.8%,
-  10:10%,
-  15:15%, 
-  20:20%,
-  21:21%,
-  27:27%,
-  28:28%,
-  33:33%,
-  50:50%,
-  53:53%, 
-  60:60%,
-  87:87%,
-  93:93%,
+  2: 1.8%,
+  10: 10%,
+  15: 15%,
+  20: 20%,
+  21: 21%,
+  27: 27%,
+  28: 28%,
+  33: 33%,
+  50: 50%,
+  53: 53%,
+  60: 60%,
+  87: 87%,
+  93: 93%,
   100: 100%,
   n2: -2%,
 ) !default;
@@ -1426,14 +1426,15 @@ $pagination-padding-x-lg: 1.5rem !default;
 $pagination-font-size: $font-size-base !default;
 
 $pagination-color: var(--#{$prefix}link-color) !default;
-$pagination-bg: var(--#{$prefix}body-bg) !default;
+// $pagination-bg: var(--#{$prefix}body-bg) !default;
+$pagination-bg: transparent !default; //*custom
 $pagination-border-radius: var(--#{$prefix}border-radius) !default;
 $pagination-border-width: var(--#{$prefix}border-width) !default;
 $pagination-margin-start: calc(
   #{$pagination-border-width} * -1
 ) !default; // stylelint-disable-line function-disallowed-list
-$pagination-border-color: var(--#{$prefix}border-color) !default;
-
+// $pagination-border-color: var(--#{$prefix}border-color) !default;
+$pagination-border-color: none !default; //*custom
 $pagination-focus-color: var(--#{$prefix}link-hover-color) !default;
 $pagination-focus-bg: var(--#{$prefix}secondary-bg) !default;
 $pagination-focus-box-shadow: $focus-ring-box-shadow !default;
