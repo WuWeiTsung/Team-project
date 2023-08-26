@@ -20,17 +20,6 @@
   backdrop-filter: blur(10px);
 }
 
-.green-gradient {
-  background: var(
-    --item-mask,
-    linear-gradient(
-      180deg,
-      rgba(68, 94, 73, 0.05) 0%,
-      rgba(68, 94, 73, 0.5) 100%
-    )
-  );
-}
-
 .text-vertical {
   writing-mode: vertical-rl;
 }
