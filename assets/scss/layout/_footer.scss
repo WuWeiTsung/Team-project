@@ -1,10 +1,16 @@
-// footer-top
-.ul-left {
-  width: 381px;
-}
-.footer-top-right {
-  width: 376px;
-  ul {
-    width: 152px;
+// Mobile
+@include mobile {
+  .footer-top-left {
+    width: 100%;
+    a {
+      letter-spacing: 0.28px;
+    }
+  }
+  .footer-top-right {
+    .logo-svg {
+      width: 160px;
+      height: 32px;
+      padding: 1.6px 2.72px 0px 3.2px;
+    }
   }
 }

@@ -473,7 +473,9 @@ $spacers: (
   22: $spacer * 22,
   23: $spacer * 23,
   24: $spacer * 24,
+  30: $spacer * 30,
   100: $spacer * 100,
+  -2: $spacer * -2,
   -60: $spacer * -60,
 ) !default; // *custom
 // scss-docs-end spacer-variables-maps
@@ -756,7 +758,7 @@ $display-font-sizes: (
   //2.5rem,
   7: 1rem,
   8: 0.875rem,
-  9: 0.075rem,
+  9: 0.75rem,
 ) !default; // *custom
 
 $display-font-family: "Montserrat", "Noto Serif TC", sans-serif !default; // *custom

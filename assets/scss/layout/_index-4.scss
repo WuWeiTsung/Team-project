@@ -1,0 +1,139 @@
+/* 電腦版 */
+// 文章專欄
+// top&left
+.white-border {
+  position: relative; //當作父層
+}
+// 偽元素創造白框
+.white-border::after {
+  content: "";
+  // 定位
+  position: absolute;
+  //白框
+  border: 1px solid $white;
+  border-radius: 40px 0px;
+  // 內縮20px
+  top: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.25em;
+  left: 1.25em;
+}
+.lt-card-img {
+  width: 416px;
+  height: 640px;
+  object-fit: cover;
+}
+// bottom&right
+.article-br {
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  p {
+    /* R_18px_200% */
+    font-family: Noto Serif TC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 36px */
+    letter-spacing: 0.36px;
+  }
+}
+.span-one {
+  display: none;
+}
+// 第四個
+.more-content {
+  z-index: 1;
+  border: none;
+  &-img {
+    width: 416px;
+    height: 400px;
+    border: 1px solid $decolight;
+  }
+  img {
+    object-fit: contain;
+  }
+}
+.contents {
+  width: 416px;
+  height: 400px;
+  &-logo {
+    width: 280px;
+    height: 56px;
+    padding: 2.8px 4.76px 0px 5.6px;
+  }
+}
+
+/* 手機版 */
+@include mobile {
+  // 文章專欄
+  // top&left
+  .lt-card-img {
+    width: 100%;
+    height: 520px;
+  }
+  // bottom&right
+  .article-br {
+    img {
+      width: 168px;
+      height: 240px;
+    }
+  }
+  .span-one {
+    display: inline;
+  }
+  .span-two {
+    display: none;
+  }
+  // 第四個
+  .more-content {
+    &-img {
+      width: 168px;
+      height: 240px;
+    }
+  }
+  .contents {
+    width: 168px;
+    height: 240px;
+    &-logo {
+      width: 140px;
+      height: 28px;
+      padding: 1.4px 2.38px 0px 2.8px;
+    }
+  }
+
+  // 客戶好評
+  .custom-title {
+    p {
+      font-family: Noto Serif TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 21.6px */
+      letter-spacing: 0.36px;
+    }
+    h2 {
+      font-family: "Playfair Display SC";
+      font-size: $h2-font-size;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 38.4px */
+      letter-spacing: 0.32px;
+    }
+  }
+  .custom-lists {
+    img {
+      width: 100%;
+      height: 240px;
+    }
+  }
+  .custom-footer {
+    img {
+      width: 280px;
+      height: 56px;
+      padding: 2.8px 4.76px 0px 5.6px;
+    }
+  }
+}
