@@ -14,28 +14,4 @@ a {
   color: inherit;
 }
 
-//正常大小寫標題字
-.font-nosc-playfair {
-  font-family: "Playfair Display", serif;
-}
-//單純noto serif字體
-.font-noto-serif {
-  font-family: "Noto Serif TC", sans-serif;
-}
-
-//以下為仙貝新增
-.backdrop-blur {
-  backdrop-filter: blur(10px);
-}
-.text-vertical{
-  writing-mode: vertical-rl;
-}
-
-.border-radius-80 {
-  border-radius: 80px 0;
-}
-
-.border-radius-40 {
-  border-radius: 40px 0;
-}
-//以上為仙貝新增(8/18)
+//客製化樣式 我把它移到custom.scss （8/25 Rita）
