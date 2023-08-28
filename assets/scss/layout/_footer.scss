@@ -1,3 +1,20 @@
+// PC
+// 社群
+.social-media-list {
+  svg {
+    // background: transparent;
+    border: 1px solid $white;
+    border-radius: 50%;
+    transition: border-color 0.3s, background-color 0.5s;
+  }
+  a:hover {
+    svg {
+      border-color: $dark;
+      background-color: $dark;
+      opacity: 0.5;
+    }
+  }
+}
 // Mobile
 @include mobile {
   .footer-top-left {

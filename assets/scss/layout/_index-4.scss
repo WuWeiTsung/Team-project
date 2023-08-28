@@ -66,6 +66,18 @@
   }
 }
 
+// 客戶好評
+.custom-footer {
+  p {
+    color: $primary;
+  }
+  a:active {
+    p {
+      color: $secondary;
+    }
+  }
+}
+
 /* 手機版 */
 @include mobile {
   // 文章專欄
