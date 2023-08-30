@@ -1,8 +1,17 @@
 /* 電腦版 */
 // 文章專欄
 // top&left
+// .test-one {
+//   height: 300vh;
+// }
+// .sticky {
+//   position: sticky;
+//   top: 0px; /* 根据需要进行调整 */
+//   z-index: 1; /* 可能需要根据页面布局进行调整 */
+// }
+
 .white-border {
-  position: relative; //當作父層
+  position: relative; // 當作父層
 }
 // 偽元素創造白框
 .white-border::after {
@@ -68,8 +77,19 @@
 
 // 客戶好評
 .custom-footer {
+  a {
+    transition: background-color 0.5s, padding 0.5s;
+  }
   p {
     color: $primary;
+  }
+  a:hover {
+    background-color: $primary;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    p {
+      color: $white;
+    }
   }
   a:active {
     p {
