@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>GreenSheep handmade jewelry</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="swiper mySwiper" style="margin-top: -65px">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../assets/images/swiper-banner-1.jpg" alt="金色鏈子" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/images/swiper-banner-2.jpg"
+            alt="金色多層次項鍊"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/images/swiper-banner-3.jpg"
+            alt="金色白殼耳環"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/images/swiper-banner-6.jpg"
+            alt="純銀拉花項鍊"
+          />
+        </div>
+      </div>
+          <!--標籤內容-->
+          <div class="container mt-15 text-start">
+            <a class="text-dark  py-1 px-2" href="index.html">首頁　｜</a>
+            <a class="text-dark  py-1 px-2" href="5-1.blog.html">常見問題 QA</a>
+        </div>
+        
+          <!--選項卡-->
+      <div class="container ">
+        <div class="container text-center my-5 ">
+            <div class="d-flex justify-content-center mb-5 ">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-primary tab-button fs-2" data-tab="faq">常見問題</button>
+                <button type="button" class="btn btn-outline-primary tab-button fs-2" data-tab="buy-info">購買須知</button>
+                <button type="button" class="btn btn-outline-primary tab-button fs-2" data-tab="return-policy">退換政策</button>
+                <button type="button" class="btn btn-outline-primary tab-button fs-2" data-tab="maintenance">如何保養</button>
+              </div>
+            </div>
+           
+            <div class="tab-content">
+                 <!--常見問題的第一項-->
+              <div id="faq" class="content active ">
+                <div class="container mt-5">
+                    <div class="accordion" id="exampleAccordion">
+                        <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            可以戴著首飾洗澡嗎?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#exampleAccordion">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1.材質和類型的考慮： 對於含有珍貴金屬、寶石或其他易受損材質的首飾，如黃金、銀飾、寶石，最好避免佩戴洗澡。水和肥皂可能對金屬造成氧化，影響光澤，也可能損害寶石的外觀。然而，耐水材質，例如不鏽鋼、實心金等，可能較為耐用。但即便如此，長時間浸泡仍然不是一個好主意。</p>
+                            <p class="text-dark mb-3">2.保養和清潔： 若不小心使首飾接觸水，應該輕輕擦乾，避免水分滲入。無論您是否佩戴首飾洗澡，定期保養都是重要的。使用清潔布輕拭首飾，保持其乾燥和潔淨。如果您經常佩戴首飾，可能會因體育活動或日常活動而出汗，因此應特別留意保持首飾的清潔。</p>
+                            <p class="text-dark mb-3">總之，保護您的首飾免受潮濕和化學物質的影響，可以確保其長久的美麗和價值。無論是何種材質，都建議在洗澡、游泳或使用護膚品時脫下首飾。</p>
+                          </div>
+                        </div>
+                      </div>
+                       <!--常見問題的第二項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            如何測量自己的戒圍呢？
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#exampleAccordion">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1.使用環尺測量： 您可以使用一個稱為「環尺」的工具來測量戒指尺寸。這是一種帶有尺寸刻度的柔軟帶子，可以繞著您希望佩戴戒指的指頭部分進行測量。將環尺繞繞指頭的基部，輕輕鬆鬆地繞一圈，確保環尺不過緊也不過松。在環尺上讀取尺寸刻度，這就是您的戒指尺寸。記住，如果您的指頭尺寸在兩個尺寸之間，可以選擇較大的尺寸，以確保戒指不過緊。</p>
+                            <p class="text-dark mb-3">2.比較現有戒指： 如果您已經有一枚適合的戒指，也可以用它來測量尺寸。將您的現有戒指放在一張尺寸表或圓環尺上，找到與戒指內徑最為相符的尺寸。這個方法通常比較容易，但請確保您的現有戒指尺寸與您希望佩戴的戒指相符。</p>
+                            <p class="text-dark mb-3">無論哪種方法，都建議在不同時間和環境條件下多次測量，以確保準確性。由於戒指尺寸可能因天氣、濕度和時間而有所變化，請選擇在最舒適的狀態下進行測量。如果您還不確定，最好向珠寶商尋求幫助，他們可以為您提供專業的戒指尺寸測量。</p>
+                          </div>
+                        </div>
+                      </div>
+                       <!--常見問題的第三項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            請問購買時會附什麼？會有包裝嗎？
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#exampleAccordion">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="mb-3 text-dark">凡是購買純銀商品，我們均會附上進口拭銀布、防潮夾鏈袋、保證卡，並用品牌經典抽屜盒包裝，如果您有送禮需求，也可以用優惠價格加購品牌絨布禮盒，即在訂單備註上索取禮物卡。<br/></p>
+
+                                <p class="text-dark">凡購買K金商品，我們會幫您免費升級品牌絨布禮盒含品牌緞帶，因為K金商品不易氧化，故不再附上拭銀布及防潮袋，平時以乾淨軟布擦拭即可。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div id="buy-info" class="content">
+                 <!--購買須知的第一項-->
+                 <div class="container mt-5">
+                    <div class="accordion" id="exampleAccordion2">
+                        <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            配送及運費
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#exampleAccordion2">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1.配送服務： 我們提供全球性的配送服務，以確保您能在世界各地都享受到我們的產品。</p>
+                            <p class="text-dark mb-3">2.運送時間： 在確認訂單後，我們會盡快處理您的訂單並安排運送。運送時間可能因所在地區而有所不同，通常在訂單確認後的數個工作天內送達。</p>
+                            <p class="text-dark mb-3">3.運費： 運費可能會根據目的地和選擇的運送方式而有所不同。在結帳時，您將能夠看到運費的詳細信息，以便您做出知情的選擇。</p>
+                            <p class="text-dark mb-3">4.追蹤訂單： 我們提供訂單追蹤服務，您可以在訂單發貨後使用提供的追蹤號碼來查詢您的訂單狀態。</p>
+                          </div>
+                        </div>
+                      </div>
+                       <!--購買須知的第二項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            關於材質
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#exampleAccordion2">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1.材質描述： 我們的產品使用高質量的材料，如純金、銀、不鏽鋼等，以確保您獲得耐久且美麗的珠寶。</p>
+                            <p class="text-dark mb-3">2.敏感性考慮： 我們理解有些人對特定材質可能具有過敏反應。我們提供有關材質的詳細描述，以便您在購買前做出明智的選擇。如果您對某種材質過敏，請在購買前謹慎考慮。</p>
+                            <p class="text-dark mb-3">3.保養建議： 不同的材質需要不同的保養方法。我們將提供有關如何保持和清潔您的珠寶的建議，以確保其保持最佳狀態。</p>
+                            <p class="text-dark mb-3">4.真實性保證： 我們保證所使用的材料是真實的，並根據產品描述提供的信息進行製造。我們的產品將會伴隨著品質保證。</p>
+                          </div>
+                        </div>
+                      </div>
+                       <!--購買須知的第三項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            關於寶石
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#exampleAccordion2">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="mb-3 text-dark">我們所採用的寶石均為天然寶石，這些寶石閃閃發光是最迷人的大自然產物，所以每顆寶石必定存在需許色差，及少許的天然內含物。我們會為您竭力挑選最高品質的寶石，但每顆寶石均是最獨一無二的，就像每位佩戴者的存在一樣，希望您也能在綠羊的世界的找到跟您最有緣分的那顆寶石。</p>
+
+                          </div>
+                        </div>
+                      </div>
+               </div>
+            </div>
+        </div>
+              <div id="return-policy" class="content">
+                <!--退換政策的第一項-->
+                <div class="container mt-5">
+                    <div class="accordion" id="exampleAccordion3">
+                        <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            退換產品的條件
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#exampleAccordion3">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1. 我們接受在特定條件下的產品退換，以確保您的購物滿意度。產品必須在購買後一定的時間內申請退換，且必須處於未佩戴、未損壞、未刻字等能夠重新銷售的狀態。</p>
+                            <p class="text-dark mb-3">2. 一些特殊訂製、個性化的產品可能無法退換，具體情況將在每個產品的頁面中指明。退換的運費可能需要由客戶承擔。</p>
+          
+                          </div>
+                        </div>
+                      </div>
+                       <!--退換政策的第二項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            退換流程
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#exampleAccordion3">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1.如需退換產品，您可以通過我們的網站或客服聯繫我們，提供訂單詳細信息以及退換原因。我們將指導您完成退換的步驟。</p>
+                            <p class="text-dark mb-3">2.收到您的退貨後，我們將進行檢查以確保產品符合退換條件。如果產品損壞或不符合退換條件，可能會影響退換的接受。</p>
+                          </div>
+                        </div>
+                      </div>
+                       <!--退換政策的第三項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            退換期限與政策
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#exampleAccordion3">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="mb-3 text-dark">1.退換的期限通常為收到產品後的特定天數，這有助於確保您有足夠的時間檢查和決定是否保留產品。請在退換期限內提出退換申請。</p>
+                            <p class="mb-3 text-dark">2.一旦我們確認接受退換，您可以選擇退款或換貨。退款將根據退貨產品的支付方式進行退回，換貨將按照您的選擇寄送。</p>
+
+                          </div>
+                        </div>
+                      </div>
+               </div>
+              </div>
+              </div>
+              <div id="maintenance" class="content">
+                <!--如何保養的第一項-->
+                <div class="container mt-5">
+                    <div class="accordion" id="exampleAccordion4">
+                        <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            儲存方法
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#exampleAccordion4">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1.將您的首飾儲存在干燥、不受陽光直射的地方，以防止金屬氧化或寶石受損。最好的方式是將每個首飾單獨放在柔軟的布袋或珠寶盒中，以避免摩擦和碰撞。</p>
+                            <p class="text-dark mb-3">2.避免將不同材質或類型的首飾放在一起儲存，因為某些金屬和寶石可能相互影響，導致損壞或氧化</p>
+    
+                          </div>
+                        </div>
+                      </div>
+                       <!--如何保養的第二項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            日常保養
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#exampleAccordion4">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="text-dark mb-3">1.使用柔軟的布或珠寶專用的清潔布輕輕擦拭首飾，去除表面的污垢和油脂。避免使用粗糙的材料，以免刮傷首飾。</p>
+                            <p class="text-dark mb-3">2.避免讓首飾接觸化學品，如香水、化妝品和清潔劑，這些可能對首飾的材質造成損害。</p>
+                            <p class="text-dark mb-3">3.定期檢查首飾上是否有鬆動的石頭或損壞的地方。如發現問題，應儘早修復
+                          </div>
+                        </div>
+                      </div>
+                       <!--如何保養的第三項-->
+                      <div class="accordion-item no-border">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            專業保養
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#exampleAccordion4">
+                          <div class="accordion-body text-start fs-5">
+                            <p class="mb-3 text-dark">1.考慮定期將首飾帶到專業的珠寶店進行深層的清潔和保養。專業清潔可以去除更難以清除的污垢和氧化物。</p>
+                            <p class="mb-3 text-dark">2.對於鍍有金屬層的首飾，隨著時間可能會出現色澤變化。如果需要，可以考慮重新鍍層，使首飾恢復光澤。</p>
+                            <p class="mb-3 text-dark">3.如有需要，您可以諮詢專業的珠寶工匠進行維修或調整，以確保您的首飾保持完美狀態。</p>
+
+                          </div>
+                        </div>
+                      </div>
+               </div>
+                </div>
+            </div>
+            </div>
+          </div>
+     
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+
+  <script>
+ $(document).ready(function() {
+  $('.tab-button').click(function() {
+    // Remove active class from all buttons
+    $('.tab-button').removeClass('active');
+    
+    // Add active class to clicked button
+    $(this).addClass('active');
+    
+    // Hide all content
+    $('.content').removeClass('active');
+    
+    // Show the relevant content
+    var tab = $(this).data('tab');
+    $('#' + tab).addClass('active');
+  });
+  
+  // Initialize with the first tab active
+  $('.tab-button:first').click();
+});
+
+    AOS.init();
+  </script>
+</html>
