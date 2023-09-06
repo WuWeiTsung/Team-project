@@ -5,7 +5,7 @@
     <!-- article top&left -->
     <div class="test">
       <a href="#">
-        <div class="card text-white white-border mb-6 me-lg-6">
+        <div class="card border-0 text-white white-border mb-6 me-lg-6">
           <img
             src="../assets/images/img-person.png"
             class="lt-card-img"
@@ -22,11 +22,11 @@
 
     <!-- article bottom&right -->
     <ul class="list-unstyled">
-      <div class="d-flex mb-4 mb-lg-6">
+      <div class="row gx-4 mb-4 mb-lg-6">
         <!-- 第一個 -->
-        <li class="article-br me-4 col-lg-6">
+        <li class="article-br col-6">
           <a href="#">
-            <div class="card text-white">
+            <div class="card border-0 text-white">
               <img
                 src="../assets/images/img-article-1.png"
                 class="card-img"
@@ -44,9 +44,9 @@
           </a>
         </li>
         <!-- 第二個 -->
-        <li class="article-br col-lg-6">
+        <li class="article-br col-6">
           <a href="#">
-            <div class="card text-white">
+            <div class="card border-0 text-white">
               <img
                 src="../assets/images/img-article-2.png"
                 class="card-img"
@@ -61,11 +61,11 @@
           </a>
         </li>
       </div>
-      <div class="d-flex">
+      <div class="row gx-4">
         <!-- 第三個 -->
-        <li class="article-br me-4 col-lg-6">
+        <li class="article-br col-6">
           <a href="#">
-            <div class="card text-white">
+            <div class="card border-0 text-white">
               <img
                 src="../assets/images/img-article-3.png"
                 class="card-img"
@@ -80,35 +80,31 @@
           </a>
         </li>
         <!-- 第四個 -->
-        <li class="more-content">
+        <li class="article-br d-flex align-items-end col-6">
           <a href="#">
-            <div
-              class="card background-gradient more-content d-flex justify-content-center align-items-center"
-            >
+            <div class="card border-0 background-gradient position-relative">
               <img
                 src="../assets/images/border.svg"
                 class="more-content-img"
                 alt="圖片"
               />
-              <div
-                class="card-img-overlay contents d-flex flex-column justify-content-end align-items-center justify-content-lg-center"
-              >
-                <div>
-                  <img
-                    src="../assets/images/logo-green.svg"
-                    alt="logo"
-                    class="contents-logo"
-                  />
-                  <p class="contents-text text-primary pt-3">更多文章</p>
-                </div>
-
+              <!-- logo和文字-->
+              <div class="card-img-overlay contents text-center">
+                <img
+                  src="../assets/images/logo-green.svg"
+                  alt="logo"
+                  class="contents-logo mb-3"
+                />
+                <p class="contents-text text-primary">更多文章</p>
+              </div>
+              <!-- button -->
+              <div class="contents-btn position-absolute">
                 <a
                   href="#"
-                  class="fs-8 py-2 px-3 text-start custom-btn custom-btn-secondary mb-11"
+                  class="card-img-overlay border-0 py-2 px-3 custom-btn custom-btn-secondary"
                   >Discover More
                 </a>
               </div>
-              <div></div>
             </div>
           </a>
         </li>
@@ -123,7 +119,7 @@
     <!-- 感謝標語 -->
     <div class="custom-title mb-6">
       <p class="text-primary mb-1">感謝客戶支持</p>
-      <h2>thank you</h2>
+      <h2 class="fs-2">thank you</h2>
     </div>
     <!-- 客戶評價 -->
     <ul class="custom-lists list-unstyled py-5 mb-6 d-lg-flex py-lg-10">

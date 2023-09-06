@@ -28,7 +28,7 @@
   left: 1.25em;
 }
 .lt-card-img {
-  width: 416px;
+  width: auto;
   height: 640px;
   object-fit: cover;
 }
@@ -103,13 +103,13 @@
   // 文章專欄
   // top&left
   .lt-card-img {
-    width: 100%;
+    width: auto;
     height: 520px;
   }
   // bottom&right
   .article-br {
     img {
-      width: 168px;
+      width: auto;
       height: 240px;
     }
   }
@@ -122,19 +122,21 @@
   // 第四個
   .more-content {
     &-img {
-      width: 168px;
+      width: 167.5px;
       height: 240px;
     }
   }
-  .contents {
-    width: 168px;
-    height: 240px;
-    &-logo {
-      width: 140px;
-      height: 28px;
-      padding: 1.4px 2.38px 0px 2.8px;
-    }
-  }
+  // .contents {
+  //   width: 167.5px;
+  //   height: 127.358px;
+  //   padding-top: 80px;
+  // }
+  // .contents-btn {
+  //   width: auto;
+  //   height: auto;
+  //   right: 19px;
+  //   bottom: 48px;
+  // }
 
   // 客戶好評
   .custom-title {
@@ -147,11 +149,6 @@
       letter-spacing: 0.36px;
     }
     h2 {
-      font-family: "Playfair Display SC";
-      font-size: $h2-font-size;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%; /* 38.4px */
       letter-spacing: 0.32px;
     }
   }
