@@ -118,3 +118,14 @@
 .custom-btn-white:hover::before {
   height: 100%;
 }
+
+// 提交表單按鈕(柯基新增)
+.custom-btn-submit {
+  color: $white;
+  background-color: $primary;
+  padding: 8px 16px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
