@@ -3,22 +3,23 @@
 <div class="container-lg py-10 py-lg-16">
   <div class="py-5 py-lg-10 d-lg-flex test-one">
     <!-- article top&left -->
-    <div class="test">
-      <a href="#">
-        <div class="card border-0 text-white white-border mb-6 me-lg-6">
+
+    <a href="#">
+      <div class="d-flex justify-content-center text-white mb-6 me-lg-6">
+        <div class="lt-card-img-box white-border">
           <img
             src="../assets/images/img-person.png"
             class="lt-card-img"
             alt="文章圖片"
           />
           <div
-            class="card-img-overlay d-flex flex-column justify-content-end align-items-start ps-9 pb-9"
+            class="d-flex flex-column justify-content-end align-items-start ps-9 pb-9"
           >
-            <p class="card-text"># News from GreenSheep</p>
+            <p class="position-absolute"># News from GreenSheep</p>
           </div>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
 
     <!-- article bottom&right -->
     <ul class="list-unstyled">
@@ -80,31 +81,33 @@
           </a>
         </li>
         <!-- 第四個 -->
-        <li class="article-br d-flex align-items-end col-6">
-          <a href="#">
-            <div class="card border-0 background-gradient position-relative">
-              <img
-                src="../assets/images/border.svg"
-                class="more-content-img"
-                alt="圖片"
-              />
-              <!-- logo和文字-->
-              <div class="card-img-overlay contents text-center">
+        <li class="col-6">
+          <a href="../pages/5-1.blog.html">
+            <div
+              class="d-flex justify-content-center align-items-center position-relative more-content"
+            >
+              <div class="position-absolute more-content-bg">
+                <img
+                  src="../assets/images/img-about-font-bg.svg"
+                  alt="背景圖片"
+                  class="more-content-img"
+                />
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center gap-3"
+              >
                 <img
                   src="../assets/images/logo-green.svg"
-                  alt="logo"
-                  class="contents-logo mb-3"
+                  alt="綠色logo"
+                  class="more-content-logo"
                 />
-                <p class="contents-text text-primary">更多文章</p>
+                <p class="text-primary more-content-text">更多文章</p>
               </div>
-              <!-- button -->
-              <div class="contents-btn position-absolute">
-                <a
-                  href="#"
-                  class="card-img-overlay border-0 py-2 px-3 custom-btn custom-btn-secondary"
-                  >Discover More
-                </a>
-              </div>
+              <a
+                href="../pages/5-1.blog.html"
+                class="position-absolute fs-8 py-2 px-3 text-start custom-btn custom-btn-secondary"
+                >Discover More</a
+              >
             </div>
           </a>
         </li>
@@ -122,26 +125,205 @@
       <h2 class="fs-2">thank you</h2>
     </div>
     <!-- 客戶評價 -->
-    <ul class="custom-lists list-unstyled py-5 mb-6 d-lg-flex py-lg-10">
-      <li class="mb-4 col-lg-3 mb-lg-0">
-        <a href="#"
-          ><img src="../assets/images/img-evaluate-1.png" alt="客戶評價圖片"
-        /></a>
+    <ul class="row list-unstyled py-5 mb-6 py-lg-10">
+      <li class="mb-4 col-md-3 mb-0">
+        <a href="#">
+          <div class="custom-card">
+            <div class="custom-img-box">
+              <img
+                src="../assets/images/img-evaluate-1.png"
+                alt="客戶評價圖片"
+              />
+            </div>
+            <div class="custom-content">
+              <div class="d-flex mb-2">
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <p class="display-8 text-grey66">5.0</p>
+              </div>
+              <p class="mb-2 text-start text-dark">
+                很喜歡有故事有意義的作品，他們家的純銀飾品不會過敏，可以天天配戴，甚至帶著洗澡也沒問題。
+              </p>
+              <div class="d-flex mb-2">
+                <p class="me-2 pe-2 text-start text-dark grey-border">項鍊</p>
+                <p class="text-start text-dark">天使之愛十字架</p>
+              </div>
+              <p class="text-start text-dark">Rita Yang</p>
+            </div>
+          </div>
+        </a>
       </li>
-      <li class="mb-4 col-lg-3 mb-lg-0">
-        <a href="#"
-          ><img src="../assets/images/img-evaluate-2.png" alt="客戶評價圖片"
-        /></a>
+      <li class="mb-4 col-md-3 mb-0">
+        <a href="#">
+          <div class="custom-card">
+            <div class="custom-img-box">
+              <img
+                src="../assets/images/img-evaluate-2.png"
+                alt="客戶評價圖片"
+              />
+            </div>
+            <div class="custom-content">
+              <div class="d-flex mb-2">
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <p class="display-8 text-grey66">5.0</p>
+              </div>
+              <p class="mb-2 text-start text-dark">
+                很謝謝設計師讓我能趕在情人節前拿到訂製的戒指，女朋友很喜歡！
+              </p>
+              <div class="d-flex mb-2">
+                <p class="me-2 pe-2 text-start text-dark grey-border">戒指</p>
+                <p class="text-start text-dark">璀璨星光寶石</p>
+              </div>
+              <p class="text-start text-dark">建宏</p>
+            </div>
+          </div>
+        </a>
       </li>
-      <li class="mb-4 col-lg-3 mb-lg-0">
-        <a href="#"
-          ><img src="../assets/images/img-evaluate-3.png" alt="客戶評價圖片"
-        /></a>
+      <li class="mb-4 col-md-3 mb-0">
+        <a href="#">
+          <div class="custom-card">
+            <div class="custom-img-box">
+              <img
+                src="../assets/images/img-evaluate-3.png"
+                alt="客戶評價圖片"
+              />
+            </div>
+            <div class="custom-content">
+              <div class="d-flex mb-2">
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <p class="display-8 text-grey66">5.0</p>
+              </div>
+              <p class="mb-2 text-start text-dark">
+                用朋友的生日月份選購誕生石很有專屬感，寶石很閃，顏色清透，完美的飾品選擇!
+              </p>
+              <div class="d-flex mb-2">
+                <p class="text-start text-dark">永恆經典誕生石純銀項鍊</p>
+              </div>
+              <p class="text-start text-dark">仙貝</p>
+            </div>
+          </div>
+        </a>
       </li>
-      <li class="col-lg-3">
-        <a href="#"
-          ><img src="../assets/images/img-evaluate-4.png" alt="客戶評價圖片"
-        /></a>
+      <li class="col-md-3">
+        <a href="#">
+          <div class="custom-card">
+            <div class="custom-img-box">
+              <img
+                src="../assets/images/img-evaluate-4.png"
+                alt="客戶評價圖片"
+              />
+            </div>
+            <div class="custom-content">
+              <div class="d-flex mb-2">
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <img
+                  src="../assets/images/ic_star.svg"
+                  alt="星星圖像"
+                  class="me-1"
+                />
+                <p class="display-8 text-grey66">5.0</p>
+              </div>
+              <p class="mb-2 text-start text-dark">
+                優雅細緻的設計、高品質的寶石，是一款工藝性極高的手鍊，包裝也很細緻完善，很適合送禮。
+              </p>
+              <div class="d-flex mb-2">
+                <p class="me-2 pe-2 text-start text-dark grey-border">手鍊</p>
+                <p class="text-start text-dark">恆星-18K金紅寶石</p>
+              </div>
+              <p class="text-start text-dark">Jim</p>
+            </div>
+          </div>
+        </a>
       </li>
     </ul>
     <!-- 結尾logo -->
