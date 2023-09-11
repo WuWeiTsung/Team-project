@@ -119,6 +119,7 @@
   height: 100%;
 }
 
+
 //開始製作 綠色按鈕，背景文字顏色變換start
 .custom-btn-start {
   background: $primary;
@@ -243,4 +244,16 @@
 
 .custom-btn-next2:hover::before {
   height: 100%;
+
+  
+// 提交表單按鈕(柯基新增)
+.custom-btn-submit {
+  color: $white;
+  background-color: $primary;
+  padding: 8px 16px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+
 }

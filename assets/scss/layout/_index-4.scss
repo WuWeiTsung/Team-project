@@ -1,8 +1,5 @@
-/* 電腦版 */
-// 文章專欄
-// top&left
 .white-border {
-  position: relative; //當作父層
+  position: relative; // 當作父層
 }
 // 偽元素創造白框
 .white-border::after {
@@ -18,10 +15,17 @@
   bottom: 1.25em;
   left: 1.25em;
 }
-.lt-card-img {
-  width: 416px;
+.lt-card-img-box {
+  width: auto;
+  max-width: 400px;
   height: 640px;
-  object-fit: cover;
+  .lt-card-img {
+    width: 100%;
+    height: 100%;
+  }
+  p {
+    bottom: 36px;
+  }
 }
 // bottom&right
 .article-br {
@@ -45,24 +49,112 @@
 }
 // 第四個
 .more-content {
-  z-index: 1;
-  border: none;
-  &-img {
-    width: 416px;
-    height: 400px;
-    border: 1px solid $decolight;
-  }
-  img {
-    object-fit: contain;
-  }
-}
-.contents {
-  width: 416px;
+  border: 1px solid var(--Yellow-Light, #e9d79c);
+  min-width: 167.5px;
   height: 400px;
+  &-bg {
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    transform: translate(-50%, -50%);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
   &-logo {
+    z-index: 2;
     width: 280px;
     height: 56px;
     padding: 2.8px 4.76px 0px 5.6px;
+  }
+  a {
+    bottom: 48px;
+  }
+}
+
+// 客戶好評
+// 客戶評價
+.custom-card {
+  position: relative;
+  width: 100%;
+  max-width: 306px;
+  height: 240px;
+  max-height: 240px;
+  transition: 0.3s;
+  &:hover {
+    width: 100%;
+    max-width: 306px;
+    height: 100%;
+    min-height: 240px;
+    background: $white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    .custom-img-box {
+      transform: scale(0.6) translate(-25%, -80%);
+      img {
+        border-radius: 12px;
+      }
+    }
+    .custom-content {
+      top: 60px;
+      height: auto;
+    }
+  }
+}
+.custom-img-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  z-index: 2;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.custom-content {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  padding: 32px 16px 12px;
+  p {
+    font-family: Noto Serif TC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: 0.28px;
+  }
+  .grey-border {
+    border-right: 1px solid $greyD4;
+  }
+}
+// 結尾logo
+.custom-footer {
+  a {
+    transition: background-color 0.5s, padding 0.5s;
+  }
+  p {
+    color: $primary;
+  }
+  a:hover {
+    background-color: $primary;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    p {
+      color: $white;
+    }
+  }
+  a:active {
+    p {
+      color: $secondary;
+    }
   }
 }
 
@@ -70,14 +162,19 @@
 @include mobile {
   // 文章專欄
   // top&left
-  .lt-card-img {
-    width: 100%;
+  .lt-card-img-box {
+    width: auto;
+    max-width: 400px;
     height: 520px;
+    .lt-card-img {
+      width: 100%;
+      height: 100%;
+    }
   }
   // bottom&right
   .article-br {
     img {
-      width: 168px;
+      width: auto;
       height: 240px;
     }
   }
@@ -89,22 +186,33 @@
   }
   // 第四個
   .more-content {
-    &-img {
-      width: 168px;
-      height: 240px;
-    }
-  }
-  .contents {
-    width: 168px;
+    border: 1px solid var(--Yellow-Light, #e9d79c);
+    min-width: 167.5px;
     height: 240px;
+    &-bg {
+      top: 50%;
+      left: 55%;
+      min-width: 167.5px;
+      transform: translate(-58%, -50%);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
     &-logo {
+      z-index: 2;
       width: 140px;
       height: 28px;
       padding: 1.4px 2.38px 0px 2.8px;
     }
+    a {
+      bottom: 48px;
+    }
   }
 
   // 客戶好評
+
   .custom-title {
     p {
       font-family: "Noto Serif TC";
@@ -127,6 +235,14 @@
     img {
       width: 100%;
       height: 240px;
+
+  // 客戶評價
+  .custom-card {
+    margin: auto;
+    &:hover {
+      width: 306px;
+      height: 100%;
+
     }
   }
   .custom-footer {
