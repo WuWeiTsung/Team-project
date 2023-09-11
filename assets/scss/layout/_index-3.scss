@@ -1,10 +1,12 @@
 .bg-image {
+
   background-image: url("../images/img_diy_bg.png"); /* 背景圖片*/
   width: 100%;
   height: 600px;
   border-radius: 80px 0px 80px 0px;
   overflow: hidden;
 }
+
 
 .bg-image-mobile {
   background-image: url("../images/img_diy_bg.png"); /* 手機板背景圖片*/
@@ -33,15 +35,17 @@
   background-size: cover;
 }
 
-.bg-image2-mobile {
-  background-image: url("../images/img-scrollView-m.png"); /* 手機板背景圖片*/
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 600px; /* 可依需求調整高度 */
-}
+
+  .bg-image2-mobile {
+    background-image: url('../images/img-scrollView-m.png');  /* 手機板背景圖片*/
+    max-width: 100%;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     /* 可依需求調整高度 */
+  }
+
 
 #base-image {
   position: absolute;
@@ -93,3 +97,28 @@
   border-left: none !important;
   border-right: none !important;
 }
+
+
+
+.imageContainer {
+
+}
+
+.imageOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.imageContainer:hover .imageOverlay {
+  opacity: 1;
+}
+
+.text-with-bg {
+  display: inline-block;
+  background-color: rgba(128, 128, 128, 0.5); /* 灰色背景，50% 透明度 */
+  padding: 10px; /* 內部邊距，讓背景更顯著 */
+}
+
