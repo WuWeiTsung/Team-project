@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>GreenSheep handmade jewelry</title>
+</head>
+
+<body>
+    <!-- <div class="background-gradient"> </div> -->
+    <%- include('./layout/header'); -%>
+        <div class="container py-15">
+            <div class="row">
+                <div class="col-3 ">
+
+                    <ul calss="text-center">
+                        <li class="list-unstyled text-start fs-4  my-5 text-dark "><a href="9-1.memberInfo.html">會員資料</a> </li>
+                                
+                        <li class="list-unstyled text-start fs-4 text-dark my-5 text-decoration-underline"><a href="#">所有訂單</a></li>
+                        <li class="list-unstyled text-start fs-4 text-dark my-5"><a href="9-3.memberLove.html">我的收藏</a> </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-9 ">
+                    <h1 class="fs-1 text-start mb-4">所有訂單</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="py-4">訂單編號</th>
+                                <th scope="col" class="py-4">下訂日期</th>
+                                <th scope="col" class="py-4">商品資訊</th>
+                                <th scope="col" class="py-4">訂單狀態</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                 
+                                <th scope="row" class="py-4">20230725889695</th>
+                                <td class="py-4">20230725</td>
+                                <td class="py-4">項鍊|天使之愛十字架......</td>
+                                <td class=""><a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    收到訂單
+                                </a>
+                                
+                                </td>
+                                
+                                <div class="collapse " id="collapseExample">
+                                    <div class="">
+                                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user
+                                        activates the relevant trigger.
+                                    </div>
+                                </div>
+                               
+                                
+                            </tr>
+                            
+
+
+                            
+                            <tr>
+                                <th scope="row" class="py-4">20230204003599</th>
+                                <td class="py-4">20230204</td>
+                                <td class="py-4">永恆經典單鑽戒</td>
+                                <td class=""><a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    給評價
+                                </a></td>
+                            </tr>
+                            <tr >
+                                <th scope="row" class="py-4">20220811000453</th>
+                                <td class="py-4">20220811</td>
+                                <td class="py-4">璀璨寶石誕生石項鍊...</td>
+                                <td class="py-4"><a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    評價完成
+                                </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
