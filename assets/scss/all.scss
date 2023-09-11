@@ -10,7 +10,6 @@
 
 //bootstrap客製化區(helpers)
 @import "./utils/variables";
-@import "./utils/index-3.scss";
 
 //客製化variables放在這
 @import "./utils/variables";
@@ -21,12 +20,17 @@
 //客製化utilites放在這
 @import "./utils/utilities";
 //客製化元件components放在這
+@import "./base/font";
 @import "./components/custom";
 @import "./components/button";
 @import "./components/breadcrumb.scss";
 @import "./components/hover-border";
 @import "./components/pagination";
 @import "./components/tag";
+@import "./components/like";
+@import "./components/collapse";
+@import "./components/pseudoElement.scss";
+@import "./components/swiper";
 
 //bootstrap5全部內容
 @import "../../node_modules/bootstrap";
@@ -41,5 +45,8 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 @import "./layout/index-1";
+@import "./layout/index-3";
 @import "./layout/index-4";
 //pages css區
+
+@import "./pages/3-4.cusText.scss";

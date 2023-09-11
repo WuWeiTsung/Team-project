@@ -5,59 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
     <title>GreenSheep handmade jewelry</title>
   </head>
 
   <body>
     <%- include('./layout/header'); -%>
-    <div class="background-gradient">
-        <div class="bg-image2 mt-16 text-white py-24 position-relative d-none d-md-inline-block">
-            <h3 class="fs-2 mt-21 mb-10 text-white">EMBRACE YOUR INNER GREEN SHEEP</H3>
-              <img style="top: 45%; left: 28.7%;" class="position-absolute translate-middle zindex-sticky" src="../assets/images/img_mark.png" alt="img_mark">
-              <p class="col-5 fs-6 lh-lg mx-auto">綠羊 GreenSheep handmade jewelry 是獨特而優雅的。他代表著對自然的敬畏，彷彿迷人的綠洲，帶給人們內心的平靜與柔和。每一位佩戴者都像一隻羊，柔軟而堅定，他們不害怕與眾不同，因為他們知道自己是最優雅的綠羊。</p>
-          </div> 
+    <div class="swiper mySwiper" style="margin-top: -65px">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../assets/images/swiper-banner-1.jpg" alt="金色鏈子" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/images/swiper-banner-2.jpg"
+            alt="金色多層次項鍊"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/images/swiper-banner-3.jpg"
+            alt="金色白殼耳環"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/images/swiper-banner-6.jpg"
+            alt="純銀拉花項鍊"
+          />
+        </div>
+      </div>
           
           <div class="container mt-15 text-start">
-            <a class="text-white  py-1 px-2" href="index.html">首頁　｜</a>
-            <a class="text-white  py-1 px-2" href="5-1.Story.html">專欄文章 Blog</a>
+            <a class="text-dark  py-1 px-2" href="index.html">首頁　｜</a>
+            <a class="text-dark  py-1 px-2" href="5-1.blog.html">專欄文章 Blog</a>
         </div>
         <div class="container mt-9">
             <h2 class="text-primary mb-21">專欄文章</h2>
        </div>
-       <div class="container mb-9">
-        <div class="col-12 position-relative">
-          <img class="col-12 img-fluid " src="../assets/images/img-about-3.png" alt="">
-            <a style="top: 30%; left: 50%;" href="5-2.blogPages.html" class="fs-2 position-absolute translate-middle text-white">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</a>
+       <!--桌機版第一篇文章-->
+       <div class="container mb-9 d-none d-lg-inline-block">
+        <div class="col-12 position-relative card text-white border-0 bg-primary bg-gradient h-border">
+          <img class="col-12 img-fluid " src="../assets/images/blog/blog (13).jpg" alt="">
+            <a style="top: 30%; left: 50%;" href="5-2.blogPages.html" class=" fs-2 position-absolute translate-middle text-dark ">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</a>
           </div>
        </div>
-       <div class="container">
-        <div class="ul d-flex row g-3 list-unstyled mb-3">
-          <li class="col-4 position-relative ">
+       <!--手機版第一篇文章-->
+       <div class="container mb-3 d-inline-block d-lg-none">
+        <div class="col-12 position-relative card text-white border-0 bg-primary bg-gradient ">
+          <img class="col-12 img-fluid " src="../assets/images/blog/blog (14).jpg" alt="">
+            <a style="top: 20%; left: 50%; " href="5-2.blogPages.html" class=" fs-4 position-absolute  text-white translate-middle-x w-100">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</a>
+          </div>
+       </div>
+        <!--桌機版第二區文章-->
+       <div class="container d-none d-lg-inline-block">
+        <div class="ul d-flex row g-3 list-unstyled mb-3 flex-wrap ">
+          <li class="col-lg-4 col-6 position-relative card text-white border-0  bg-gradient h-border">
+            <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (17).jpg" alt="">
+            <p style="top: 30%; left: 50%;" class="fs-4  position-absolute translate-middle text-white">「經典款式太無聊?探索珠寶手飾世界的怪咖設計師」</p>
+          </li>
+          <li class="col-lg-4 col-6 position-relative card text-white border-0  bg-gradient h-border">
+            <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (2).jpg" alt="">
+            <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「「嘘!不要告訴別人,這些珠寶手飾是明星私藏品」</p>
+          </li>
+          <li class="col-lg-4 col-6 position-relative ">
+            <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (3).jpg" alt="">
+            <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「不只是飾品,珠寶手飾也是時尚界的心理慰藉」</p>
+          </li>
+          <li class="col-lg-4 col-6 position-relative ">
             <img class="w-100 bgCustomblog" src="../assets/images/img-evaluate-1.png" alt="">
             <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</p>
           </li>
-          <li class="col-4 position-relative">
+          <li class="col-lg-4 col-6 position-relative ">
             <img class="w-100 bgCustomblog" src="../assets/images/img-evaluate-1.png" alt="">
             <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</p>
           </li>
-          <li class="col-4 position-relative">
-            <img class="w-100 bgCustomblog" src="../assets/images/img-evaluate-1.png" alt="">
-            <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</p>
-          </li>
-          <li class="col-4 position-relative ">
-            <img class="w-100 bgCustomblog" src="../assets/images/img-evaluate-1.png" alt="">
-            <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</p>
-          </li>
-          <li class="col-4 position-relative">
-            <img class="w-100 bgCustomblog" src="../assets/images/img-evaluate-1.png" alt="">
-            <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</p>
-          </li>
-          <li class="col-4 position-relative">
+          <li class="col-lg-4 col-6 position-relative ">
             <img class="w-100 bgCustomblog" src="../assets/images/img-evaluate-1.png" alt="">
             <p style="top: 30%; left: 50%;" class="fs-4 position-absolute translate-middle text-white">「鑽石不是最閃的!珠寶手飾界的暗黑馬拉松選手」</p>
           </li>
         </div>
        </div>
+        <!--手機版第二區文章-->
+        <div class="container d-inline-block d-lg-none">
+          <div class="ul d-flex row g-3 list-unstyled mb-3 flex-wrap ">
+            <li class="col-12 position-relative card text-white border-0  bg-gradient ">
+              <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (17).jpg" alt="">
+              <a style="top: 20%;" class="fs-5  position-absolute  text-white" href="#">「經典款式太無聊?探索珠寶手飾世界的怪咖設計師」</a>
+            </li>
+            <li class="col-lg-4 col-12 position-relative card text-white border-0  bg-gradient h-border">
+              <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (2).jpg" alt="">
+              <p style="top: 20%;" class="fs-5  position-absolute  text-white">「嘘!不要告訴別人,這些珠寶手飾是明星私藏品」</p>
+            </li>
+            <li class="col-lg-4 col-12 position-relative card text-white border-0  bg-gradient h-border">
+              <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (17).jpg" alt="">
+              <p style="top: 20%;" class="fs-5  position-absolute  text-white">「不只是飾品,珠寶手飾也是時尚界的心理慰藉」</p>
+            </li>
+            <li class="col-lg-4 col-12 position-relative card text-white border-0  bg-gradient h-border">
+              <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (17).jpg" alt="">
+              <p style="top: 20%;" class="fs-5  position-absolute  text-white">「只有真正的珠寶控才懂的痛苦:珠寶手飾購物癮的副作用」</p>
+            </li>
+            <li class="col-lg-4 col-12 position-relative card text-white border-0  bg-gradient h-border">
+              <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (17).jpg" alt="">
+              <p style="top: 20%;" class="fs-5  position-absolute  text-white">「珠寶手飾與幸福感:穿上它們,你就是全世界最亮的星」</p>
+            </li>
+            <li class="col-lg-4 col-12 position-relative card text-white border-0  bg-gradient h-border">
+              <img class="w-100 bgCustomblog" src="../assets/images/blog/blog (17).jpg" alt="">
+              <p style="top: 20%;" class="fs-5  position-absolute  text-white">「這些珠寶手飾是上天特地送給我們的禮物,相信我!」</p>
+            </li>
+          </div>
+         </div>
+
        <div class="container">
         <div class="ul d-flex row g-3 list-unstyled pb-21"> 
           <li class="col-3 position-relative ">
@@ -99,8 +160,11 @@
     </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
     AOS.init();
   </script>

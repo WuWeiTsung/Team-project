@@ -6,16 +6,18 @@
 // 先隱藏change的照片
 .change {
   display: none;
+  opacity: 0;
 }
 //hover時隱藏show
 .h-border:hover .show {
   display: none;
-  transition: transform 0.3s;
+  transition: all 0.5s;
 }
 //hover時顯change
 .h-border:hover .change {
   display: block;
-  transition: transform 0.3s;
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 //以下為hover時加上border的內容

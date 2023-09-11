@@ -1,0 +1,11 @@
+//左邊直線
+.start-line::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: $deco;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+}
