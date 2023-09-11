@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>GreenSheep handmade jewelry</title>
   </head>
 
@@ -12,13 +17,16 @@
     <div class="background-gradient">
       <%- include('./layout/header'); -%> <%- include('./layout/index-1'); -%>
       <%- include('./layout/index-2'); -%> <%- include('./layout/index-3'); -%>
-      <%- include('./layout/index-4'); -%>
+      <%- include('./layout/index-4'); -%> <%- include('./layout/gotop-btn');
+      -%>
     </div>
     <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </html>
