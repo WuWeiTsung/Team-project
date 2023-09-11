@@ -1,0 +1,21 @@
+.scroll-top-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  opacity: 0;
+  transition: 0.5s;
+  a {
+    background: $primary;
+    width: 36px;
+    height: 36px;
+    padding: 0 6px;
+    border-radius: 50px;
+    pointer-events: none;
+  }
+  &.active {
+    opacity: 1;
+    a {
+      pointer-events: auto;
+    }
+  }
+}
