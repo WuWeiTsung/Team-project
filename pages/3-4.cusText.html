@@ -27,7 +27,7 @@
             <li class="breadcrumb-item"><a href="#">首頁</a></li>
             <li class="breadcrumb-item active" aria-current="page">客製設計</li>
             <li class="breadcrumb-item active" aria-current="page">
-              璀璨星球寶石
+              璀璨生日寶石項鍊
             </li>
           </ol>
         </nav>
@@ -38,8 +38,15 @@
               <img
                 src="../assets/images/custom-back.JPG"
                 alt=""
-                class="d-block w-100 img-fluid object-fit-cover mb-4"
+                class="d-block w-100 img-fluid mb-4 cus-pic object-fit-cover"
               />
+              <div
+                class="preview-section position-absolute top-56 start-50 translate-middle"
+              >
+                <div class="preview-text text-black fw-medium">
+                  <p id="previewText">輸入內容</p>
+                </div>
+              </div>
             </div>
 
             <p
@@ -74,25 +81,97 @@
 
             <h2 class="fs-3 fs-lg-2 mb-3 fw-medium">Step 2 : 輸入你想說的話</h2>
             <!-- 輸入文字 -->
-            <form class="row">
-              <div class="col-10 gx-0">
-                <div class="form-floating">
+            <div class="container mb-5">
+              <form class="row mx-auto">
+                <div class="col-10 gx-0">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control no-box-shadow bg-white"
+                      id="inputText"
+                      placeholder="請輸入雷刻文字內容"
+                    />
+                    <label for="inputText">請輸入雷刻文字內容</label>
+                  </div>
+                </div>
+                <button class="col-2 btn btn-primary" id="previewButton">
+                  預覽
+                </button>
+
+                <div id="step2HelpBlock" class="form-text text-start">
+                  (中文最多5個字，英文最多10個字母)
+                </div>
+              </form>
+              <div class="row mx-auto py-4">
+                <div class="col-4">
+                  <label
+                    for="Montserrat"
+                    class="fs-2 fw-medium text-dark"
+                    style="font-family: 'Montserrat', sans-serif"
+                    >Love</label
+                  >
+                  <br />
                   <input
-                    type="text"
-                    class="form-control no-box-shadow"
-                    id="floatingInput"
+                    type="radio"
+                    name="fontRadio"
+                    value="Montserrat"
+                    id="Montserrat"
+                    checked
                   />
-                  <label for="floatingInput  " class="text-dark font-montserrat"
-                    >請輸入雷刻文字內容</label
+                  <label
+                    for="Montserrat"
+                    class="fs-7 fw-medium text-primary"
+                    style="font-family: 'Montserrat', sans-serif"
+                    >現代</label
+                  >
+                </div>
+
+                <div class="col-4">
+                  <label
+                    for="NotoSerif"
+                    class="fs-2 fw-medium text-dark"
+                    style="font-family: 'Noto Serif TC', sans-serif"
+                    >Love</label
+                  >
+                  <br />
+                  <input
+                    type="radio"
+                    name="fontRadio"
+                    value="Noto Serif TC"
+                    id="NotoSerif"
+                  />
+                  <label
+                    for="NotoSerif"
+                    class="fs-7 fw-medium text-primary"
+                    style="font-family: 'Noto Serif TC', sans-serif"
+                    >古典</label
+                  >
+                </div>
+
+                <div class="col-4">
+                  <label
+                    for="Script"
+                    class="fs-2 fw-medium text-dark"
+                    style="font-family: 'Dancing Script', sans-serif"
+                    >Love</label
+                  >
+                  <br />
+                  <input
+                    type="radio"
+                    name="fontRadio"
+                    value="Dancing Script"
+                    id="Script"
+                  />
+
+                  <label
+                    for="Script"
+                    class="fs-8 fw-medium text-primary"
+                    style="font-family: 'Dancing Script', sans-serif"
+                    >手寫（限英文）</label
                   >
                 </div>
               </div>
-              <button type="submit" class="col-2 btn btn-primary">預覽</button>
-
-              <div id="step2HelpBlock" class="form-text text-start">
-                (中文最多5個字，英文最多10個字母)
-              </div>
-            </form>
+            </div>
             <div class="d-flex justify-content-center gap-6">
               <a
                 href="3-2.cusDetail-.html"
@@ -111,11 +190,12 @@
     </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </html>
