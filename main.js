@@ -25,7 +25,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
 // 點擊愛心
 const heartIcons = document.querySelectorAll(".heart-icon");
 heartIcons.forEach((icon) => {
@@ -72,6 +71,7 @@ $(document).ready(function () {
       buttonStates[targetIconId] = "hidden";
     }
   });
+});
 
 // 回到最上頁按鈕(柯基新增 9/10)
 // 用goTop當成變數，而這個變數是抓到scroll-top-btn這個class
@@ -87,5 +87,4 @@ window.addEventListener("scroll", () => {
     // 如果沒有超過300px，就移除active這個class
     goTop.classList.remove("active");
   }
-
 });
