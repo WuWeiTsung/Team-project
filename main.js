@@ -87,6 +87,11 @@ window.addEventListener("scroll", () => {
     // 如果沒有超過300px，就移除active這個class
     goTop.classList.remove("active");
   }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> a1706a5feb4462cdf2e9884a3d701163e3470bff
 });
 
 $(document).ready(function () {
@@ -119,4 +124,8 @@ $(document).ready(function () {
       );
     }
   });
+<<<<<<< HEAD
+=======
+
+>>>>>>> a1706a5feb4462cdf2e9884a3d701163e3470bff
 });
