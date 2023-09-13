@@ -38,18 +38,19 @@
   margin-left: 8px;
 }
 
-form {
-  width: 500px;
+.member-form {
   max-width: 500px;
   a {
     text-decoration: underline;
   }
 }
-button {
+.sub-button {
   width: 500px;
-  max-width: 500px;
   img {
     width: 20px;
     height: 20px;
+  }
+  @include mobile {
+    width: 250px;
   }
 }

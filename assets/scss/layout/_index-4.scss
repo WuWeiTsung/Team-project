@@ -223,6 +223,16 @@
     line-height: 120%; /* 21.6px */
     letter-spacing: 0.36px;
   }
+
+
+  // 客戶評價
+  .custom-card {
+    margin: auto;
+    &:hover {
+      width: 306px;
+      height: 100%;
+    }
+
   h2 {
     font-family: "Playfair Display SC";
     font-size: $h2-font-size;
@@ -230,6 +240,7 @@
     font-weight: 400;
     line-height: 120%; /* 38.4px */
     letter-spacing: 0.32px;
+
   }
 }
 .custom-lists {

@@ -2,6 +2,7 @@
   position: fixed;
   right: 24px;
   bottom: 24px;
+  z-index: 3;
   opacity: 0;
   transition: 0.5s;
   a {

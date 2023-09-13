@@ -23,7 +23,7 @@
             <h1 class="fs-1 mb-8">忘記密碼</h1>
             <div>
               <!-- 表單 -->
-              <form>
+              <form class="member-form">
                 <!-- 驗證碼 -->
                 <div class="mb-3">
                   <input
@@ -58,10 +58,10 @@
 
                 <button
                   type="submit"
-                  class="d-flex justify-content-center align-items-center custom-btn-submit"
+                  class="d-flex justify-content-center align-items-center custom-btn-submit sub-button"
                 >
                   <div class="button-img-box me-1">
-                    <img src="../assets/images/unnamed.png" alt="圖像" />
+                    <img src="../assets/images/GreenSheep.png" alt="圖像" />
                   </div>
                   <p>重新設定密碼</p>
                 </button>
@@ -80,11 +80,10 @@
       </div>
     </div>
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>
