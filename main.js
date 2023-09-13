@@ -87,8 +87,6 @@ window.addEventListener("scroll", () => {
     // 如果沒有超過300px，就移除active這個class
     goTop.classList.remove("active");
   }
-
-
 });
 
 $(document).ready(function () {
@@ -121,5 +119,4 @@ $(document).ready(function () {
       );
     }
   });
-
 });

@@ -1,0 +1,16 @@
+.product-content {
+  line-height: 2;
+}
+.product-detail-title {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.product-yt-link {
+  color: $primary;
+  border-radius: 8px;
+  transition: 0.3s;
+  &:hover {
+    color: $white;
+    background-color: $primary;
+  }
+}
