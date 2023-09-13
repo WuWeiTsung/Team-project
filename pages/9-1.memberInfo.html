@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo-circle-gold.png" />
+    <title>GreenSheep handmade jewelry</title>
+</head>
+
+<body>
+    <!-- <div class="background-gradient"> </div> -->
+    <%- include('./layout/header'); -%>
+    <div class="container py-15">
+        <div class="row">
+            <div class="col-3 ">
+            
+                <ul calss="text-center">
+                    <li class="list-unstyled text-start fs-4 my-5 text-dark text-decoration-underline fs-4"><a href="#">會員資料</a> </li>
+                    <li class="list-unstyled text-start fs-4 text-dark my-5"><a href="9-2.memberOrder.html">所有訂單</a></li>
+                    <li class="list-unstyled text-start fs-4 text-dark my-5"><a href="9-3.memberLove.html">我的收藏</a> </li>
+                </ul>
+
+            </div>
+
+            <div class="col-9 ">
+
+                <h1 class="fs-1 text-start mb-4">會員資料</h1>
+                <form action="" class="p-10 bg-light w-75 text-start">
+                    <label for="email" class="text-dark me-3 fs-5">信箱：</label>
+                    <input type="email" class="w-75 mb-5 p-1" id="email" value="Good@google.com" disabled > <br>
+                    <label for="birthday" class="text-dark me-3 fs-5">生日：</label>
+                    <input type="date" class="w-75 mb-5 p-1" id="birthday" value="2000/01/01" disabled > <br>
+                    <label for="nickname" class="text-dark me-3 fs-5">暱稱：</label>
+                    <input type="text" class="w-75 mb-5 p-1" id="nickname" value="GoodMan"> <br>
+                    <label for="pwd" class="text-dark me-3 fs-5">密碼：</label>
+                    <input type="password" class="w-75 mb-5 p-1" id="pwd" value="0000s"> <br>
+                    <div class="px-20 d-flex justify-content-end ">
+                        <button  class="px-4 py-3 fs-5 bg-danger border-0 text-light  rounded-2">修改資料</button>
+                    </div>
+                    
+                </form>
+
+            </div>
+        </div>
+        
+    </div>
+
+   
+    <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
