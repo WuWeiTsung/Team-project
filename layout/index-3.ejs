@@ -2,7 +2,7 @@
     <!-- PC端客製化頁面 -->
 <div class="container mb-16">
     <div class="row">
-      <div  class="col-12 bg-image position-relative box d-none d-lg-inline-block">
+      <div  class="col-12 bg-image position-relative box d-none d-xl-block">
         <!--<img class="position-absolute top-60 start-50 translate-middle zindex-dropdown" src="../assets/images/img_diy_center.png" alt="img_diy_center">-->
   
           <img class="zindex-dropdown" id="base-image" src="../assets/images/img_diy_center.png" alt="Click Me">
@@ -10,99 +10,67 @@
           <img id="dynamic-image" src="../assets/images/point.png" alt="Popup Image">
           <img id="testImg" class="position-absolute position-absolute top-60 start-21 translate-middle zindex-sticky" src="../assets/images/img-diy-left.png" alt="img-diy-left">
       
-      <!-- Bootstrap JS and Popper.js 透過JS搜尋點選位置顯示 選擇寶石 -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+       <!-- Bootstrap JS and Popper.js -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
       
-      <script>
-          var dynamicImage = document.getElementById('dynamic-image');
-          var popoverElement = document.getElementById('base-image');
-          var popover;
-          
-          function handleImageClick(event) {
-              // Hide the dynamic image and destroy existing popover if any
-              dynamicImage.style.display = 'none';
-              if (popover) {
-                  popover.dispose();
-              }
-      
-              var x = event.offsetX - (dynamicImage.width / 2);
-              var y = event.offsetY - (dynamicImage.height / 2);
-              var xOffset = 450;
-              var yOffset = 120;
-      
-              // Adjust position to ensure the dynamic image does not go outside the container.
-              x = Math.min(Math.max(0, x), this.width - dynamicImage.width)+ xOffset;
-              y = Math.min(Math.max(0, y), this.height - dynamicImage.height)+ yOffset;
-      
-              dynamicImage.style.left = x + 'px';
-              dynamicImage.style.top = y + 'px';
-              dynamicImage.style.display = 'block';
-      
-              popover = new bootstrap.Popover(dynamicImage, {
-                  title: '選擇寶石',
-                  html: true,  // Enable HTML content
-                  content: `
-                      <div class="d-flex">
-                          <img src="../assets/images/stoneBox.png" alt="Image 1" class="me-2">
-                          <img src="../assets/images/stoneBox1.png" alt="Image 2" class="me-2">
-                          <img src="../assets/images/stoneBox2.png" alt="Image 3">
-                      </div>
-                  `,
-                  placement: 'top'
-              });
-      
-              popover.show();
-          }
-          
-          popoverElement.addEventListener('click', handleImageClick);
-          import $ from "https://cdn.skypack.dev/jquery@3.6.4";
-
-$("#testImg").click(function() {
+       <script>
+           var dynamicImage = document.getElementById('dynamic-image');
+           var popoverElement = document.getElementById('base-image');
+           var popover;
+           
+           function handleImageClick(event) {
+               // Hide the dynamic image and destroy existing popover if any
+               dynamicImage.style.display = 'none';
+               if (popover) {
+                   popover.dispose();
+               }
+       
+               var x = event.offsetX - (dynamicImage.width / 2);
+               var y = event.offsetY - (dynamicImage.height / 2);
+               var xOffset = 450;
+               var yOffset = 120;
+       
+               // Adjust position to ensure the dynamic image does not go outside the container.
+               x = Math.min(Math.max(0, x), this.width - dynamicImage.width)+ xOffset;
+               y = Math.min(Math.max(0, y), this.height - dynamicImage.height)+ yOffset;
+       
+               dynamicImage.style.left = x + 'px';
+               dynamicImage.style.top = y + 'px';
+               dynamicImage.style.display = 'block';
+       
+               popover = new bootstrap.Popover(dynamicImage, {
+                   title: '選擇寶石',
+                   html: true,  // Enable HTML content
+                   content: `
+                       <div class="d-flex">
+                           <img src="../assets/images/stoneBox.png" alt="Image 1" class="me-2">
+                           <img src="../assets/images/stoneBox1.png" alt="Image 2" class="me-2">
+                           <img src="../assets/images/stoneBox2.png" alt="Image 3">
+                       </div>
+                   `,
+                   placement: 'top'
+               });
+       
+               popover.show();
+           }
+           
+           popoverElement.addEventListener('click', handleImageClick);
  
- TestClick($(this));
- 
-});
-
-  function TestClick(event) {
-    // 隐藏动态图像并销毁现有的弹出框（popover）
-    dynamicImage.hide();
-    if (popover) {
-      popover.dispose();
-    }
-
-    var x = event.offsetX - (dynamicImage.width() / 2);
-    var y = event.offsetY - (dynamicImage.height() / 2);
-    var xOffset = 0;
-    var yOffset = 0;
-
-    // 调整位置以确保动态图像不超出容器范围
-    x = Math.min(Math.max(0, x), this.width - dynamicImage.width()) + xOffset;
-    y = Math.min(Math.max(0, y), this.height - dynamicImage.height()) + yOffset;
-
-    dynamicImage.css({ left: x + 'px', top: y + 'px' }).show();
-
-    popover = new bootstrap.Popover(dynamicImage, {
-      title: '雷射雕刻',
-      html: true,  // 启用 HTML 内容
-      content: `
-        <div class="form-group">
-          <label for="inputText">雷射雕刻：</label>
-          <input type="text" class="form-control" id="inputText" placeholder="请输入文字">
-        </div>
-      `,
-      placement: 'top'
-    });
-
-    popover.show();
-  }
-
-  popoverElement.on('click', handleImageClick);
-;
-      </script>
+       </script>
       
         
      
-        <div class="col-3 position-absolute top-60 start-87 translate-middle text-start">
+        <div class="col-3 position-absolute top-60 start-87 translate-middle text-start d-none d-lg-inline-block">
+          <h6 class="text-white fs-6 mb-1">開始客製屬於您的產品</h5>
+          <h3 class="text-white fs-2 mb-4" >CUSTOMIZE YOUR STYLE</h3>
+          <p class="text-light mb-1 fs-7">2 個步驟創作你的專屬心意</p>
+          <p class="text-light mb-4 fs-8">Create Your Unique Elegance</p>
+          <p class="text-decolight mb-4">Step 1：選擇專屬寶石</p>
+          <p class="text-decolight mb-4">Step 2：輸入你想說的話</p>
+          <a href="#" class=" fs-8 py-2 px-3  text-start custom-btn custom-btn-secondary">Start Now</a>
+        </div>
+
+        <div class="col-2 position-absolute top-60 start-87 translate-middle text-start d-none d-mb-inline-block">
           <h6 class="text-white fs-6 mb-1">開始客製屬於您的產品</h5>
           <h3 class="text-white fs-2 mb-4" >CUSTOMIZE YOUR STYLE</h3>
           <p class="text-light mb-1 fs-7">2 個步驟創作你的專屬心意</p>
@@ -112,70 +80,44 @@ $("#testImg").click(function() {
           <a href="#" class=" fs-8 py-2 px-3  text-start custom-btn custom-btn-secondary">Start Now</a>
         </div>
       </div>
-
-      <!--手機板 客製化頁面 尚未完成-->
-      <div   class="col-12 bg-image-mobile position-relative box d-inline-block d-lg-none">
+      <!--平板版 客製化頁面-->
+      <div  class="col-12 bg-image position-relative box d-none d-lg-block d-xl-none">
         <!--<img class="position-absolute top-60 start-50 translate-middle zindex-dropdown" src="../assets/images/img_diy_center.png" alt="img_diy_center">-->
-        <div style="top: 25%; left: 50%;" class="text-center col-10 position-absolute translate-middle text-start">
+  
+          <img style="width: 40%;top: 27%; left: 30%;" class="zindex-dropdown" id="base-image" src="../assets/images/img_diy_center.png" alt="Click Me">
+          <img style="top: 25%; left: 28%;" class="position-absolute translate-middle zindex-sticky " src="../assets/images/img_diy_font.png" alt="img_diy_font">
+          <img id="dynamic-image" src="../assets/images/point.png" alt="Popup Image">
+          <img style="width: 30%;"  id="testImg" class="position-absolute position-absolute top-60 start-21 translate-middle zindex-sticky" src="../assets/images/img-diy-left.png" alt="img-diy-left">
+  
+        <div style=" top: 60%; left: 87%;" class="col-3 position-absolute translate-middle text-start d-none d-lg-inline-block">
           <h6 class="text-white fs-6 mb-1">開始客製屬於您的產品</h5>
-          <h3 class="text-white fs-1 mb-4" >CUSTOMIZE YOUR STYLE</h3>
-          <p class="text-light mb-1 fs-7">2 個步驟創作你的專屬心意</p>
+          <h3 class="text-white fs-2 mb-4" >CUSTOMIZE YOUR STYLE</h3>
+          <p class="text-light mb-1 fs-7">3 個步驟創作你的專屬心意</p>
           <p class="text-light mb-4 fs-8">Create Your Unique Elegance</p>
           <p class="text-decolight mb-4">Step 1：選擇專屬寶石</p>
           <p class="text-decolight mb-4">Step 2：輸入你想說的話</p>
           <a href="#" class=" fs-8 py-2 px-3  text-start custom-btn custom-btn-secondary">Start Now</a>
         </div>
-          <img style="width: 184px; height: 184px; top: 52%; left: 30%;" id="imgdiyleft" class="position-absolute position-absolute translate-middle zindex-dropdown" src="../assets/images/img-diy-left.png" alt="img-diy-left">
-          <img style="width: 240px; height: 320px; top: 60%; left: 30%;" class="position-absolute zindex-tooltip" id="bg-image2-mobile" src="../assets/images/img_diy_center.png" alt="Click Me">
+
+
+      </div>
+      <!--手機板 客製化頁面 尚未完成-->
+      <div   class="col-12 bg-image-mobile position-relative box d-block d-lg-none">
+        <!--<img class="position-absolute top-60 start-50 translate-middle zindex-dropdown" src="../assets/images/img_diy_center.png" alt="img_diy_center">-->
+        <div style="top: 25%; left: 50%;" class="text-center col-10 position-absolute translate-middle text-start">
+          <h6 class="text-white fs-6 mb-1">開始客製屬於您的產品</h5>
+          <h3 class="text-white fs-1 mb-4 " >CUSTOMIZE YOUR STYLE</h3>
+          <p class="text-light mb-1 fs-7">2 個步驟創作你的專屬心意</p>
+          <p class="text-light mb-4 fs-8 font-noto-serif">Create Your Unique Elegance</p>
+          <p class="text-decolight mb-4">Step 1：選擇專屬寶石</p>
+          <p class="text-decolight mb-4">Step 2：輸入你想說的話</p>
+          <a href="#" class=" fs-8 py-2 px-3  text-start custom-btn custom-btn-secondary">Start Now</a>
+        </div>
+          <img style="width: 184px;  top: 52%; left: 30%;" id="imgdiyleft" class="position-absolute position-absolute translate-middle zindex-dropdown" src="../assets/images/img-diy-left.png" alt="img-diy-left">
+          <img style="width: 240px;  top: 60%; left: 30%;" class="position-absolute zindex-tooltip" id="bg-image2-mobile" src="../assets/images/img_diy_center.png" alt="Click Me">
           <img id="dynamic-image" src="../assets/images/point.png" alt="Popup Image">
       
-      <!-- Bootstrap JS and Popper.js -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-      
-      <script>
-          var dynamicImage = document.getElementById('dynamic-image');
-          var popoverElement = document.getElementById('base-image');
-          var popover;
-          
-          function handleImageClick(event) {
-              // Hide the dynamic image and destroy existing popover if any
-              dynamicImage.style.display = 'none';
-              if (popover) {
-                  popover.dispose();
-              }
-      
-              var x = event.offsetX - (dynamicImage.width / 2);
-              var y = event.offsetY - (dynamicImage.height / 2);
-              var xOffset = 450;
-              var yOffset = 120;
-      
-              // Adjust position to ensure the dynamic image does not go outside the container.
-              x = Math.min(Math.max(0, x), this.width - dynamicImage.width)+ xOffset;
-              y = Math.min(Math.max(0, y), this.height - dynamicImage.height)+ yOffset;
-      
-              dynamicImage.style.left = x + 'px';
-              dynamicImage.style.top = y + 'px';
-              dynamicImage.style.display = 'block';
-      
-              popover = new bootstrap.Popover(dynamicImage, {
-                  title: '選擇寶石',
-                  html: true,  // Enable HTML content
-                  content: `
-                      <div class="d-flex">
-                          <img src="../assets/images/stoneBox.png" alt="Image 1" class="me-2">
-                          <img src="../assets/images/stoneBox1.png" alt="Image 2" class="me-2">
-                          <img src="../assets/images/stoneBox2.png" alt="Image 3">
-                      </div>
-                  `,
-                  placement: 'top'
-              });
-      
-              popover.show();
-          }
-          
-          popoverElement.addEventListener('click', handleImageClick);
-
-      </script>
+     
       
 
      
@@ -185,6 +127,7 @@ $("#testImg").click(function() {
   </div>
 
  <!-- 為什麼選擇我們頁面 -->
+ 
   <div class="container py-10 px-6">
     <p class="text-primary fs-6 mb-1">為什麼選擇我們</p>
     <h3 class="fs-lg-2 fs-1 mb-12 text-primary">WHY GREEN SHEEP HANDMADE JEWELRY?</h3>
