@@ -1,35 +1,3 @@
-// //首頁banner背景圖
-// .bg-banner {
-//   background: url(../assets/images/img.png) center center;
-//   max-width: 100%;
-//   // min-height: 1000px;
-//   // margin-top: -64px; // 重疊到navbar之下
-//   // margin-left: 72px; // 將container的
-//   // margin-right: 72px;
-//   background-repeat: no-repeat;
-//   z-index: -500;
-//   @include mobile {
-//     background: url(../assets/images/img-banner-mobile.png) center center;
-//     margin-top: -65px;
-//     max-width: 100%;
-//     margin-left: 0px;
-//     margin-right: 0px;
-//   }
-// }
-// // 手機背景
-// .bg-banner-md {
-//   background: url(../assets/images/img-banner-mobile.png) center center;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   z-index: -500;
-// }
-//
-
-// 手機主要圖片
-.bg-main-pic-mobile {
-  top: -1px;
-  width: 100%;
-}
 //首圖背景色塊
 //左側色塊
 .bg-left-stripe {
@@ -100,16 +68,7 @@
     top: 436px;
   }
 }
-//手機版
-// .bg-mobile {
-//   // background: url(../images/img-diy-bg.png);
-//   background: url(../images/img-banner-mobile.png);
-//   width: 100%;
-//   height: auto;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
+
 .bg-main-pic-mobile {
   background: url(../images/img-banner-mobile.png);
   width: 100%;
@@ -226,23 +185,3 @@
     transform: translateX(0);
   }
 }
-
-// //金羊裝飾
-// .deco-sheep {
-//   img {
-//     width: 155px;
-//     height: auto;
-//     bottom: 0;
-//     right: 50px;
-//     @include pad {
-//       width: 120px;
-//       right: 12px;
-//       bottom: 34px;
-//     }
-//     @include mobile {
-//       width: 80px;
-//       right: 12px;
-//       bottom: 34px;
-//     }
-//   }
-// }

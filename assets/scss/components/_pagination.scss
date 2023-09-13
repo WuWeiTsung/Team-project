@@ -21,7 +21,7 @@
   }
 }
 .page-item {
-  .active {
+  & .active {
     background-color: $white !important;
   }
 }

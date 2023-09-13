@@ -6,15 +6,6 @@
   height: auto;
 }
 
-//正常大小寫標題字
-.font-nosc-playfair {
-  font-family: "Playfair Display", serif;
-}
-//單純noto serif字體
-.font-noto-serif {
-  font-family: "Noto Serif TC", sans-serif;
-}
-
 //以下為仙貝新增
 .backdrop-blur {
   backdrop-filter: blur(10px);
@@ -52,21 +43,7 @@
   background-color: $grey9F;
 }
 
-//滑鼠滑過時，下方文字會顯示下底線
-.h-bottom-line {
-  a {
-    &::after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 100%;
-      background-color: $primary;
-      transform: scalex(0); //Ｘ軸為基準，物件尺寸0
-      transform-origin: left; //起始點由左側開始
-      transition: transform 0.4s ease;
-    }
-    &:hover::after {
-      transform: scalex(1); //Ｘ軸為基準，物件尺寸100%
-    }
-  }
+//滑鼠變手指
+.cursor-pointer {
+  cursor: pointer;
 }
