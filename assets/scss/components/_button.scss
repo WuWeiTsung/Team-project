@@ -12,6 +12,7 @@
   border-bottom: 2px solid orange;
   position: relative;
   transition: background 0.3s, color 0.3s;
+  z-index: 1;
 }
 
 .custom-btn-secondary::before {
@@ -25,15 +26,13 @@
   transition: height 0.3s;
   z-index: -1;
 }
-
-.custom-btn-secondary:hover {
-  background: $secondary;
-  color: $white;
-}
-
 .custom-btn-secondary:hover::before {
   height: 100%;
 }
+.custom-btn-secondary:hover {
+  color: $white;
+}
+
 //綠色按鈕，背景文字顏色變換:Shop Now
 .custom-btn-primary {
   background: $primary;
