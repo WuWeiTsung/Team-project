@@ -1,131 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/images/logo-circle-gold.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/logo-circle-gold.png"
+    />
     <title>GreenSheep handmade jewelry</title>
-</head>
 
-<body>
-    <!-- <div class="background-gradient"> </div> -->
-    <%- include('./layout/header'); -%>
-        <div class="container py-15">
-            <div class="row">
-                <div class="col-md-3 col-12">
 
-                    <ul calss="text-center">
-                        <li class="list-unstyled text-md-start text-center fs-4  my-5 text-dark "><a href="9-1.memberInfo.html">會員資料</a> </li>
-                                
-                        <li class="list-unstyled text-md-start text-center fs-4 text-dark my-5 text-decoration-underline"><a href="#">所有訂單</a></li>
-                        <li class="list-unstyled text-md-start text-center fs-4 text-dark my-5"><a href="9-3.memberLove.html">我的收藏</a> </li>
-                    </ul>
+  <body>
+    <div class="background-gradient">
+      <%- include('./layout/header'); -%>
+      <div class="container py-7 py-10 mb-30">
+        <div class="row">
+          <div class="col-md-3 col-12">
+            <ul calss="text-center">
+              <li
+                class="list-unstyled text-start fs-6 my-5 text-dark h-bottom-line"
+              >
+                <a
+                  href="9-1.memberInfo.html"
+                  class="d-inline-block"
+                  aria-current="page"
+                  >會員資料</a
+                >
+              </li>
+              <li class="list-unstyled text-start fs-6 text-dark my-5">
+                <a
+                  href="#"
+                  class="d-inline-block border-bottom border-bottom-1 border-dark"
+                  >所有訂單</a
+                >
+              </li>
+              <li
+                class="list-unstyled text-start fs-6 text-dark my-5 h-bottom-line"
+              >
+                <a href="9-3.memberLove.html" class="d-inline-block"
+                  >我的收藏</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                </div>
 
-                <div class="col-md-9 col-12">
-                    <h1 class="fs-1 text-md-start text-center mb-4 mt-md-0 mt-5">所有訂單</h1>
-                    <table class="table justify-content-center ">
-                        <thead>
-                            <tr>
-                                <th scope="col" class="py-4">訂單編號</th>
-                                <th scope="col" class="py-4">下訂日期</th>
-                                <th scope="col" class="py-4">商品資訊</th>
-                                <th scope="col" class="py-4">訂單狀態</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                 
-                                <th scope="row" class="py-4">20230725889695</th>
-                                <td class="py-4">20230725</td>
-                                <td class="py-4">項鍊|天使之愛十字架......</td>
-                                <td class=""><a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    收到訂單
-                                </a>
-                                
-                                </td>                               
-                            </tr>
-                            <tr class="collapse border-0" id="collapseExample1">
-                                <th colspan="4" class="">
-                                    <div class="my-20 ">
-                                    
-                                        <div class="position-relative m-4 w-100 mx-auto">
-                                            <div class="progress" style="height: 1px;">
-                                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                            <button type="button"
-                                                class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill "
-                                                style="width: 3rem; height:3rem;">1</button>
-                                            <button type="button"
-                                                class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-light rounded-pill"
-                                                style="width: 3rem; height:3rem;">2</button>
-                                            <button type="button"
-                                                class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-light rounded-pill"
-                                                style="width: 3rem; height:3rem;">3</button>
-                                            <button type="button" 
-                                                class="position-absolute top-0 start-75 translate-middle btn btn-sm btn-light rounded-pill"
-                                                style="width: 3rem; height:3rem;">4</button>
-                                            <button type="button" 
-                                                class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-light rounded-pill"
-                                                style="width: 3rem; height:3rem;">5</button>
-                                        </div>
-                                    
-                                        <div class="position-relative mt-15 mx-auto ">
-                                            <p class="position-absolute top-0 start-0 translate-middle text-primary">收到訂單</p>
-                                            <p class="position-absolute top-0 start-25 translate-middle text-light">製作中</p>
-                                            <p class="position-absolute top-0 start-50 translate-middle text-light">出貨</p>
-                                            <p class="position-absolute top-0 start-75 translate-middle text-light">送達門市</p>
-                                            <p class="position-absolute top-0 end-n7 translate-middle text-light ">完成取貨</p>
-                                    
-                                        </div>
+          <div class="col-md-9 col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-15">
+                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item">
+                  <a href="9-1.memberInfo.html"> 會員資料</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  所有訂單
+                </li>
+              </ol>
+            </nav>
+            <h1 class="fs-3 fs-lg-2 text-start mb-6">所有訂單</h1>
+            <table class="table">
+              <thead class="bg-transparent">
+                <tr>
+                  <th scope="col" class="py-4 text-primary fw-medium">
+                    訂單編號
+                  </th>
+                  <th scope="col" class="py-4 text-primary fw-medium">
+                    下訂日期
+                  </th>
+                  <th scope="col" class="py-4 text-primary fw-medium">
+                    商品資訊
+                  </th>
+                  <th scope="col" class="py-4 text-primary fw-medium">
+                    訂單狀態
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-transparent">
+                <tr>
+                  <th scope="row" class="py-4 text-primary fw-medium">
+                    20230725889695
+                  </th>
+                  <td class="py-4 text-primary">2023/07/25</td>
+                  <td class="py-4 text-primary">天使之愛十字架項鍊</td>
+                  <td class="">
+                    <a
+                      class="btn btn-primary"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      收到訂單
+                    </a>
+                  </td>
+                  <!-- <div class="collapse " id="collapseExample">
+                                    <div class="">
+                                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user
+                                        activates the relevant trigger.
                                     </div>
-                                </th>
-                            </tr>
-                            
+                                </div>                                -->
+                </tr>
+                <tr class="collapse border-0" id="collapseExample1">
+                  <th colspan="4" class="">
+                    <div class="my-20">
+                      <div class="position-relative m-4 w-100 mx-auto">
+                        <div class="progress" style="height: 1px">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0%"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <button
+                          type="button"
+                          class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                          style="width: 3rem; height: 3rem"
+                        >
+                          1
+                        </button>
+                        <button
+                          type="button"
+                          class="position-absolute top-0 start-25 translate-middle btn btn-sm btn-light rounded-pill"
+                          style="width: 3rem; height: 3rem"
+                        >
+                          2
+                        </button>
+                        <button
+                          type="button"
+                          class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-light rounded-pill"
+                          style="width: 3rem; height: 3rem"
+                        >
+                          3
+                        </button>
+                        <button
+                          type="button"
+                          class="position-absolute top-0 start-75 translate-middle btn btn-sm btn-light rounded-pill"
+                          style="width: 3rem; height: 3rem"
+                        >
+                          4
+                        </button>
+                        <button
+                          type="button"
+                          class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-light rounded-pill"
+                          style="width: 3rem; height: 3rem"
+                        >
+                          5
+                        </button>
+                      </div>
+
+                      <div class="position-relative mt-15 mx-auto">
+                        <p
+                          class="position-absolute top-0 start-0 translate-middle text-primary"
+                        >
+                          收到訂單
+                        </p>
+                        <p
+                          class="position-absolute top-0 start-25 translate-middle text-light"
+                        >
+                          製作中
+                        </p>
+                        <p
+                          class="position-absolute top-0 start-50 translate-middle text-light"
+                        >
+                          出貨
+                        </p>
+                        <p
+                          class="position-absolute top-0 start-75 translate-middle text-light"
+                        >
+                          送達門市
+                        </p>
+                        <p
+                          class="position-absolute top-0 end-n7 translate-middle text-light"
+                        >
+                          完成取貨
+                        </p>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
 
 
-                            
-                            <tr>
-                                <th scope="row" class="py-4">20230204003599</th>
-                                <td class="py-4">20230204</td>
-                                <td class="py-4">永恆經典單鑽戒</td>
-                                <td class=""><a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    給評價
-                                </a></td>
-                            </tr>
-                            <tr >
-                                <th scope="row" class="py-4">20220811000453</th>
-                                <td class="py-4">20220811</td>
-                                <td class="py-4">璀璨寶石誕生石項鍊...</td>
-                                <td class="py-4"><a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    評價完成
-                                </a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                </div>
-            </div>
-
+                <tr>
+                  <th scope="row" class="text-primary fw-medium py-4">
+                    20230204003599
+                  </th>
+                  <td class="py-4 text-primary">2023/02/04</td>
+                  <td class="py-4 text-primary">永恆經典單鑽戒</td>
+                  <td class="">
+                    <a
+                      class="btn btn-primary"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      給予評價
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-primary fw-medium py-4">
+                    20220811000453
+                  </th>
+                  <td class="py-4 text-primary">2022/08/11</td>
+                  <td class="py-4 text-primary">璀璨寶石誕生石項鍊</td>
+                  <td>
+                    <a
+                      class="btn btn-primary"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      評價完成
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
 
-
-        <%- include('./layout/footer'); -%>
-            <script type="module" src="../main.js"></script>
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
