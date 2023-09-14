@@ -6,75 +6,77 @@
       <!--<img class="position-absolute top-60 start-50 translate-middle zindex-dropdown" src="../assets/images/img_diy_center.png" alt="img_diy_center">-->
 
       <img
-        class="zindex-dropdown base-image"
+        class="zindex-dropdown cursor-pointer"
+        id="base-image"
         src="../assets/images/img_diy_center.png"
         alt="Click Me"
-      />
-      <img
-        class="dynamic-image"
-        src="../assets/images/point.png"
-        alt="Popup Image"
       />
       <img
         class="position-absolute top-20 start-28 translate-middle zindex-sticky"
         src="../assets/images/img_diy_font.png"
         alt="img_diy_font"
       />
-
       <img
-        class="position-absolute top-60 start-21 translate-middle zindex-sticky testImg"
+        id="dynamic-image"
+        src="../assets/images/point.png"
+        alt="Popup Image"
+      />
+      <img
+        id="testImg"
+        class="position-absolute position-absolute top-60 start-21 translate-middle zindex-sticky"
         src="../assets/images/img-diy-left.png"
         alt="img-diy-left"
       />
 
       <!-- Bootstrap JS and Popper.js -->
-      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-      
-       <script>
-           var dynamicImage = document.getElementById('dynamic-image');
-           var popoverElement = document.getElementById('base-image');
-           var popover;
-           
-           function handleImageClick(event) {
-               // Hide the dynamic image and destroy existing popover if any
-               dynamicImage.style.display = 'none';
-               if (popover) {
-                   popover.dispose();
-               }
-       
-               var x = event.offsetX - (dynamicImage.width / 2);
-               var y = event.offsetY - (dynamicImage.height / 2);
-               var xOffset = 450;
-               var yOffset = 120;
-       
-               // Adjust position to ensure the dynamic image does not go outside the container.
-               x = Math.min(Math.max(0, x), this.width - dynamicImage.width)+ xOffset;
-               y = Math.min(Math.max(0, y), this.height - dynamicImage.height)+ yOffset;
-       
-               dynamicImage.style.left = x + 'px';
-               dynamicImage.style.top = y + 'px';
-               dynamicImage.style.display = 'block';
-       
-               popover = new bootstrap.Popover(dynamicImage, {
-                   title: '選擇寶石',
-                   html: true,  // Enable HTML content
-                   content: `
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        var dynamicImage = document.getElementById("dynamic-image");
+        var popoverElement = document.getElementById("base-image");
+        var popover;
+
+        function handleImageClick(event) {
+          // Hide the dynamic image and destroy existing popover if any
+          dynamicImage.style.display = "none";
+          if (popover) {
+            popover.dispose();
+          }
+
+          var x = event.offsetX - dynamicImage.width / 2;
+          var y = event.offsetY - dynamicImage.height / 2;
+          var xOffset = 450;
+          var yOffset = 120;
+
+          // Adjust position to ensure the dynamic image does not go outside the container.
+          x =
+            Math.min(Math.max(0, x), this.width - dynamicImage.width) + xOffset;
+          y =
+            Math.min(Math.max(0, y), this.height - dynamicImage.height) +
+            yOffset;
+
+          dynamicImage.style.left = x + "px";
+          dynamicImage.style.top = y + "px";
+          dynamicImage.style.display = "block";
+
+          popover = new bootstrap.Popover(dynamicImage, {
+            title: "選擇寶石",
+            html: true, // Enable HTML content
+            content: `
                        <div class="d-flex">
                            <img src="../assets/images/stoneBox.png" alt="Image 1" class="me-2">
                            <img src="../assets/images/stoneBox1.png" alt="Image 2" class="me-2">
                            <img src="../assets/images/stoneBox2.png" alt="Image 3">
                        </div>
                    `,
-                   placement: 'top'
-               });
-       
-               popover.show();
-           }
-           
-           popoverElement.addEventListener('click', handleImageClick);
- 
-       </script>
-       -->
+            placement: "top",
+          });
+
+          popover.show();
+        }
+
+        popoverElement.addEventListener("click", handleImageClick);
+      </script>
 
       <div
         class="col-3 position-absolute top-60 start-87 translate-middle text-start d-none d-lg-inline-block"
@@ -112,9 +114,11 @@
     <div
       class="col-12 bg-image position-relative box d-none d-lg-block d-xl-none"
     >
+      <!--<img class="position-absolute top-60 start-50 translate-middle zindex-dropdown" src="../assets/images/img_diy_center.png" alt="img_diy_center">-->
+
       <img
         style="width: 40%; top: 27%; left: 30%"
-        class="zindex-dropdown"
+        class="zindex-dropdown cursor-pointer"
         id="base-image"
         src="../assets/images/img_diy_center.png"
         alt="Click Me"
