@@ -26,12 +26,14 @@
     &:hover::after {
       transform: scalex(1); //Ｘ軸為基準，物件尺寸100%
     }
-  }
-  & .active {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: $primary;
+    &.active::before {
+      content: "";
+      position: absolute;
+      bottom: 0.5rem;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $primary;
+    }
   }
 }
