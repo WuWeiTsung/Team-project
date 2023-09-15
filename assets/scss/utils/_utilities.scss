@@ -108,6 +108,7 @@ $utilities: map-merge(
         values: static relative absolute fixed sticky,
       ),
     "top": (
+      responsive: true,
       property: top,
       values: $position-values,
     ),
@@ -116,6 +117,7 @@ $utilities: map-merge(
       values: $position-values,
     ),
     "start": (
+      responsive: true,
       property: left,
       class: start,
       values: $position-values,
@@ -281,6 +283,9 @@ $utilities: map-merge(
       property: height,
       class: vh,
       values: (
+        65: 65vh,
+        70: 70vh,
+        80: 80vh,
         100: 100vh,
       ),
     ),
