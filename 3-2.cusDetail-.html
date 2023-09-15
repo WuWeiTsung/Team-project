@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Team-project/assets/logo-circle-gold-232da73f.png"
+    />
+    <title>GreenSheep handmade jewelry</title>
+    <script type="module" crossorigin src="/Team-project/assets/main-05b74b76.js"></script>
+    <link rel="stylesheet" href="/Team-project/assets/main-7dad700e.css">
+  </head>
+
+  <body>
+    <div class="background-gradient">
+      <div class="accordion fs-8 py-1 bg-primary text-white">
+  即日起，訂單達 2,000元 以上即可享免運費優惠！
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-hover py-3 flex-column">
+  <!-- logo -->
+  <div class="container">
+    <h1 class="logo mb-0 me-lg-8">
+      <a class="navbar-brand" href="index.html">Green Sheep handmade jewelry</a>
+    </h1>
+    <!-- menu -->
+    <div
+      class="collapse navbar-collapse flex-column offcanvas offcanvas-end py-16 px-12 py-lg-0 px-lg-0"
+      id="offcanvasExample"
+      style="max-width: 85%"
+    >
+      <div class="offcanvas-header d-lg-none">
+        <button
+          type="button"
+          class="btn-close position-absolute"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          style="padding: 10px; top: 16px; right: 16px"
+        ></button>
+      </div>
+      <ul
+        class="navbar-nav me-auto gap-xxl-4 gap-xl-2 position-relative align-items-md-start"
+      >
+        <li class="nav-item dropdown" style="min-width: 101px">
+          <a
+            class="nav-link dropdown-toggle nav-item-en py-2 py-lg-1 px-2"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >SHOP
+          </a>
+          <a
+            class="nav-link dropdown-toggle nav-item-ch py-2 py-lg-1 px-2 text-start text-lg-center"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >全部商品
+          </a>
+
+          <!-- 全部商品的下拉選單 -->
+          <ul
+            class="dropdown-menu custom-dropdown-menu shadow-none border-0 font-noto-serif fs-8 start-50"
+          >
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="2-1.productPage.html"
+                >最新商品</a
+              >
+            </li>
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="#">情人節禮物推薦</a>
+            </li>
+            <li><a class="d-block py-3 py-lg-2 px-5" href="#">優惠商品</a></li>
+            <li><hr class="dropdown-divider bg-white d-none d-lg-block" /></li>
+            <li><a class="d-block py-3 py-lg-2 px-5" href="#">戒指 Ring</a></li>
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="#">耳環 Earrings</a>
+            </li>
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="#">手環 Bracelet</a>
+            </li>
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="#">項鍊 Pendant</a>
+            </li>
+            <li><hr class="dropdown-divider bg-white d-none d-lg-block" /></li>
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="#">925 純銀 Silver</a>
+            </li>
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="#">14K金 14K-Gold</a>
+            </li>
+            <li>
+              <a class="d-block py-3 py-lg-2 px-5" href="#">18K金 18K-Gold</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" style="min-width: 130px">
+          <a
+            class="nav-link nav-item-en py-2 py-lg-1 px-2"
+            href="3-1.cusProduct.html"
+            >CUSTOMISED</a
+          >
+          <a
+            class="nav-link nav-item-ch py-2 py-lg-1 px-2 text-start text-lg-center"
+            href="3-1.cusProduct.html"
+            >客製設計</a
+          >
+        </li>
+        <li class="nav-item" style="min-width: 81px">
+          <a
+            class="nav-link nav-item-en py-2 py-lg-1 px-2"
+            href="4-1.Story.html"
+            >ABOUT</a
+          >
+          <a
+            class="nav-link nav-item-ch py-2 py-lg-1 px-2 text-start text-lg-center"
+            href="4-1.Story.html"
+            >關於品牌</a
+          >
+        </li>
+        <li class="nav-item" style="min-width: 81px">
+          <a class="nav-link nav-item-en py-2 py-lg-1 px-2" href="5-1.blog.html"
+            >BLOG</a
+          >
+          <a
+            class="nav-link nav-item-ch py-2 py-lg-1 px-2 text-start text-lg-center"
+            href="5-1.blog.html"
+            >專欄文章</a
+          >
+        </li>
+        <li class="nav-item" style="min-width: 81px">
+          <a class="nav-link nav-item-en py-2 py-lg-1 px-2" href="6-1.faq.html"
+            >Q&A</a
+          >
+          <a
+            class="nav-link nav-item-ch py-2 py-lg-1 px-2 text-start text-lg-center"
+            href="6-1.faq.html"
+            >常見問題</a
+          >
+        </li>
+        <li class="nav-item d-lg-none" style="min-width: 100px">
+          <a
+            class="nav-link nav-item-ch py-2 py-lg-1 px-2 text-start"
+            href="8-1.memLogin.html"
+            >登入/註冊</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- 右側icon -->
+    <div class="d-flex">
+      <div class="header-icon d-flex align-items-center">
+        <!-- 搜尋欄 -->
+        <form class="header-form me-2 flex-shrink-1">
+          <div class="input-group d-flex align-items-center">
+            <img
+              class="header-white-icon"
+              src="/Team-project/assets/ic-search-white-87c9dd09.svg"
+              alt="搜尋欄"
+            />
+            <img
+              class="header-green-icon"
+              src="/Team-project/assets/ic-search-green-898431eb.svg"
+              alt="搜尋欄"
+            />
+            <input
+              type="text"
+              class="form-control no-box-shadow search-box input-group-text bg-transparent text-start d-none d-lg-block"
+              placeholder="search..."
+            />
+          </div>
+        </form>
+        <!-- 會員中心 -->
+        <a class="me-2 d-none d-lg-block flex-grow-1" href="8-1.memLogin.html"
+          ><img
+            class="header-white-icon p-xxl-2 p-xl-0"
+            src="/Team-project/assets/ic-person-white-2720497a.svg"
+            alt="會員中心" />
+          <img
+            class="header-green-icon p-xxl-2 p-xl-0"
+            src="/Team-project/assets/ic-person-green-588e427d.svg"
+            alt="會員中心"
+        /></a>
+        <!-- 購物車 -->
+        <a href="7-2.shopCart.html">
+          <div class="position-relative">
+            <img
+              class="header-white-icon p-xxl-2 p-xl-0"
+              src="/Team-project/assets/ic-cart-white-94ee2cdf.svg"
+              alt="購物袋"
+            />
+            <img
+              class="header-green-icon p-xxl-2 p-xl-0"
+              src="/Team-project/assets/ic-cart-green-2dec33f6.svg"
+              alt="購物袋"
+            />
+
+            <span
+              class="position-absolute top-0 top-xxl-25 start-95 start-xxl-75 translate-middle p-1 bg-primary rounded-circle text-white"
+            >
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </div></a
+        >
+      </div>
+      <!-- menu-icon 在md時出現-->
+      <button
+        class="navbar-toggler no-box-shadow border-0 mx-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="menu-icon material-icons border-0 no-box-shadow"
+          >menu</span
+        >
+      </button>
+    </div>
+  </div>
+</nav>
+      <!-- 上半部 -->
+      <div class="container py-7 py-lg-10">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item active">
+              <a href="3-1.cusProduct.html">客製設計</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              璀璨生日寶石項鍊
+            </li>
+          </ol>
+        </nav>
+        <div class="d-flex flex-column flex-lg-row gap-10 algn-items-center">
+          <div class="w-100 w-lg-55 h-100">
+            <!-- Swiper -->
+            <div class="swiper cusSwiper mb-3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/Team-project/assets/product-11-1-cbe2e04d.JPG"
+                    alt="璀璨生日寶石項鍊照"
+                    class="w-100 img-fluid object-fit-cover"
+                    style="height: 500px"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/Team-project/assets/product-11-2-ad52ba35.JPG"
+                    alt="璀璨生日寶石項鍊照"
+                    class="w-100 img-fluid object-fit-cover"
+                    style="height: 500px"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <p
+              class="font-montserrat fs-9 text-grey9F text-end text-lg-start mb-1"
+            >
+              每顆寶石均為天然寶石，有些許色差及天然內含物，均為正常現象。
+            </p>
+            <p
+              class="font-montserrat fs-9 text-grey9F text-end text-lg-start mb-1"
+            >
+              即時照片預覽為參考，設計師會依照實際狀況及美感做些許位置及尺寸大小調整。
+            </p>
+          </div>
+          <!-- 上半部 -->
+          <div class="w-100 w-lg-45 text-start d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <h1 class="fw-bold fs-3 fs-lg-2 me-5">璀璨生日寶石項鍊</h1>
+              <!-- 愛心收藏 -->
+              <svg
+                class="heart-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
+            <span
+              class="d-block text-secondary fs-4 fs-lg-3 fw-medium mb-4 mb-lg-5"
+              >NT $3,800起</span
+            >
+            <!-- 行銷活動 -->
+            <div class="position-relative start-line">
+              <div
+                class="d-flex align-items-bottom text-grey66 fs-9 text-start ms-7"
+              >
+                <div class="d-inline-block border-grey66 me-6">
+                  <p class="mb-2">全館滿NT$3,000，享台灣免運優惠</p>
+                  <p class="mb-2">全館滿NT$12,000，享國際免運優惠</p>
+                  <p class="mb-2">
+                    凡購買指定商品，免費升級品牌絨布禮盒包裝(含品牌緞帶)
+                  </p>
+                </div>
+                <a
+                  class="d-flex align-items-center text-primary collapsed align-self-end mb-2"
+                  data-bs-toggle="collapse"
+                  href="#productCollapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="productCollapse"
+                  >查看<br class="d-none d-lg-block d-xl-none" />更多
+                  <span class="material-icons expand-less fs-6">
+                    expand_less
+                  </span>
+                  <span class="material-icons expand-more fs-6">
+                    expand_more
+                  </span>
+                </a>
+              </div>
+              <!-- 折疊選單 -->
+              <div
+                class="collapse text-grey66 fs-9 text-start ms-7"
+                id="productCollapse"
+              >
+                <p class="mb-2 font-noto-serif">
+                  情人節限定優惠，指定商品8折起
+                </p>
+                <p>慶祝板娘生日，購買指定商品，就送板娘飛吻一個～啾咪！</p>
+              </div>
+            </div>
+            <!-- 產品特色 -->
+            <div class="my-4 my-lg-5">
+              <p
+                class="d-flex align-items-center text-primary mb-2 fs-8 fs-lg-7"
+              >
+                <span class="material-icons me-1 fs-8 fs-lg-7">
+                  check_circle
+                </span>
+
+                材質：925純銀 原創設計 手工製作
+              </p>
+              <p
+                class="d-flex align-items-center text-primary mb-2 fs-8 fs-lg-7"
+              >
+                <span class="material-icons me-1 fs-8 fs-lg-7">
+                  check_circle
+                </span>
+                訂製商品：接單後21日內出貨
+              </p>
+              <p
+                class="d-flex align-items-center text-primary mb-2 fs-8 fs-lg-7"
+              >
+                <span class="material-icons me-1 fs-8 fs-lg-7">
+                  check_circle
+                </span>
+
+                贈：進口拭銀布 防潮袋 品牌經典紙盒包裝
+              </p>
+            </div>
+            <!-- 優惠加購 -->
+            <div
+              class="d-flex align-items-center justify-content-between bg-light rounded-2 px-6 py-3 gap-5 mb-5"
+            >
+              <!-- checkbox -->
+              <div
+                class="form-check fs-8 w-40 w-lg-30 w-xl-40 d-flex align-items-center"
+                style="color: #990000"
+              >
+                <input
+                  class="form-check-input no-box-shadow cursor-pointer me-2"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label fw-medium mb-0 py-5 cursor-pointer"
+                  for="flexCheckDefault"
+                >
+                  優惠加購價 NT$200
+                </label>
+              </div>
+              <!-- Button trigger modal -->
+              <div
+                class="d-flex align-items-center justify-content-between gap-4 w-60 w-lg-70 w-xl-60"
+              >
+                <div>
+                  <span
+                    class="badge rounded-pill bg-primary text-white lh-sm mb-1"
+                    >送禮必備</span
+                  >
+                  <p class="text-start text-dark fs-8 lh-sm">
+                    品牌絨布禮盒包裝(含品牌緞帶)
+                  </p>
+                  <span class="text-dark fs-9">(原價500元)</span>
+                </div>
+                <img
+                  src="/Team-project/assets/package-sm-c67cf750.jpg"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#packageModal"
+                  style="width: 60px; height: 60px; cursor: pointer"
+                  class="img-fluid"
+                />
+              </div>
+              <!-- 彈跳視窗 -->
+              <div
+                class="modal fade"
+                id="packageModal"
+                tabindex="-1"
+                aria-labelledby="packageModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content p-6 bg-primary">
+                    <div class="modal-header border-0 justify-content-end">
+                      <button
+                        type="button"
+                        class="text-white mb-4 bg-transparent border-0"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span class="material-icons fs-2"> close </span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="/Team-project/assets/package-a23026fe.jpg"
+                        alt="package-picture"
+                        class="border border-1"
+                        style="border-radius: 60px 0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CTA -->
+            <div
+              class="d-flex flex-column justify-content-center align-items-center flex-grow-1"
+            >
+              <p class="fs-3 fs-xl-2 text-primary fw-bold mb-5">
+                只要2步驟，訂製你的專屬珠寶
+              </p>
+              <a
+                href="3-3.cusGem.html"
+                class="d-inline-block custom-btn custom-btn-start py-4 px-20"
+                >開始製作</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="container-fluid bg-primary py-lg-12 py-8">
+    <div class="container-lg">
+      <!-- footer-top -->
+      <div
+        class="d-flex flex-lg-row justify-content-lg-between mb-lg-4 flex-column-reverse mb-6"
+      >
+        <ul
+          class="footer-top-left list-unstyled d-flex flex-lg-row flex-column align-items-center mb-0"
+        >
+          <div class="d-flex mb-lg-0 align-items-lg-center mb-4">
+            <li>
+              <a href="2-1.productPage.html" class="fs-8 text-white me-lg-6"
+                >最新作品</a
+              >
+            </li>
+            <li>
+              <a
+                href="3-1.cusProduct.html"
+                class="fs-8 text-white me-lg-6 mx-lg-0 mx-12"
+                >客製設計</a
+              >
+            </li>
+            <li>
+              <a href="4-1.Story.html" class="fs-8 text-white me-lg-6"
+                >關於品牌</a
+              >
+            </li>
+          </div>
+          <div class="d-flex align-items-lg-center">
+            <li>
+              <a href="5-1.blog.html" class="fs-8 text-white me-lg-6 me-12"
+                >專欄文章</a
+              >
+            </li>
+            <li><a href="6-1.faq.html" class="fs-8 text-white">常見問題</a></li>
+          </div>
+        </ul>
+        <div
+          class="footer-top-right d-flex justify-content-between mb-4 mb-lg-0"
+        >
+          <!-- logo svg -->
+          <div class="me-2 me-lg-6">
+            <a href="index.html">
+              <img
+                src="/Team-project/assets/logo-white-0abc258f.svg"
+                alt="greensheep logo"
+                class="img-fluid"
+            /></a>
+          </div>
+          <!-- social-medias -->
+          <ul
+            class="social-media-list list-unstyled d-flex justify-content-between mb-0"
+          >
+            <li class="me-4">
+              <a href="#">
+                <!-- line svg -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2342_4058)">
+                    <path
+                      opacity="0.7"
+                      d="M39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5C30.7696 0.5 39.5 9.23045 39.5 20Z"
+                      stroke="none"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M29 19.0263C29 15.152 24.9625 12 20 12C15.0377 12 11 15.152 11 19.0263C11 22.4994 14.2019 25.4086 18.527 25.9589C18.8199 26.0196 19.2188 26.1451 19.3198 26.386C19.4106 26.6047 19.3793 26.9474 19.3488 27.1685C19.3488 27.1685 19.2436 27.7796 19.2204 27.91C19.1814 28.1288 19.0395 28.7659 20 28.3767C20.9608 27.9874 25.1828 25.4404 27.071 23.3494C28.3754 21.9736 29 20.577 29 19.0263ZM14.4146 21.1339C14.1861 21.1339 14 20.9408 14 20.703V17.4397C14 17.2022 14.2116 17.0089 14.48 17.0089C14.7484 17.0089 14.9 17.2006 14.9 17.4397V20.2724H15.9854C16.2143 20.2724 16.4 20.4657 16.4 20.703C16.4 20.9408 16.2143 21.1339 15.9854 21.1339H14.4146ZM18.2 20.703C18.2 20.9408 17.9981 21.1339 17.7501 21.1339C17.5019 21.1339 17.3 20.9408 17.3 20.703V17.4397C17.3 17.2022 17.5019 17.0089 17.7501 17.0089C17.9981 17.0089 18.2 17.2022 18.2 17.4397V20.703ZM22.7 20.703C22.7 20.889 22.5717 21.0532 22.3797 21.1116C22.3316 21.1265 22.2813 21.1339 22.2309 21.1339C22.0849 21.1339 21.9449 21.0696 21.8566 20.9616L20.0372 18.6842V20.703C20.0372 20.9408 19.8272 21.1339 19.5687 21.1339C19.3103 21.1339 19.1 20.9408 19.1 20.703V17.4397C19.1 17.2541 19.2288 17.0899 19.4203 17.0312C19.4686 17.0162 19.5187 17.0089 19.5691 17.0089C19.7153 17.0089 19.8554 17.0731 19.9431 17.1812L21.7631 19.4587V17.4397C21.7631 17.2022 21.9735 17.0089 22.2316 17.0089C22.4902 17.0089 22.7 17.2022 22.7 17.4397V20.703ZM25.5853 18.6407C25.8142 18.6407 26 18.8339 26 19.0715C26 19.3088 25.8142 19.502 25.5853 19.502H24.4294V20.2724H25.5853C25.8138 20.2724 26 20.4657 26 20.703C26 20.9408 25.8138 21.1339 25.5853 21.1339H24.0145C23.7863 21.1339 23.6 20.9408 23.6 20.703V19.0726V19.0715V17.4397C23.6 17.2022 23.7859 17.0089 24.0145 17.0089H25.5853C25.8142 17.0089 26 17.2022 26 17.4397C26 17.6772 25.8142 17.8702 25.5853 17.8702H24.4294V18.6407H25.5853Z"
+                      fill="#D5D5D5"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2342_4058">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="me-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=100071826680344"
+                target="_blank"
+              >
+                <!-- fb svg -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2342_4061)">
+                    <path
+                      opacity="0.7"
+                      d="M39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5C30.7696 0.5 39.5 9.23045 39.5 20Z"
+                      stroke="none"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.5983 20.9736H24.1413L24.5219 18.0404H21.5983V16.1677C21.5983 15.3184 21.8357 14.7397 23.0615 14.7397L24.625 14.739V12.1156C24.3545 12.0799 23.4265 12 22.3467 12C20.0926 12 18.5494 13.3669 18.5494 15.8773V18.0404H16V20.9736H18.5494V28.5H21.5983V20.9736Z"
+                      fill="#D5D5D5"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2342_4061">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/greensheep_jewelry/"
+                target="_blank"
+              >
+                <!-- ig svg -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2342_4064)">
+                    <path
+                      opacity="0.7"
+                      d="M39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5C30.7696 0.5 39.5 9.23045 39.5 20Z"
+                      stroke="none"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.0625 12C17.771 12 17.4837 12.0097 16.5837 12.0508C15.6857 12.0917 15.0723 12.2344 14.5356 12.443C13.9808 12.6586 13.5102 12.9471 13.0411 13.4161C12.5721 13.8852 12.2836 14.3558 12.068 14.9106C11.8594 15.4473 11.7167 16.0607 11.6758 16.9587C11.6347 17.8587 11.625 18.146 11.625 20.4375C11.625 22.729 11.6347 23.0163 11.6758 23.9163C11.7167 24.8143 11.8594 25.4277 12.068 25.9644C12.2836 26.5192 12.5721 26.9898 13.0411 27.4589C13.5102 27.9279 13.9808 28.2164 14.5356 28.4321C15.0723 28.6406 15.6857 28.7833 16.5837 28.8242C17.4837 28.8653 17.771 28.875 20.0625 28.875C22.354 28.875 22.6413 28.8653 23.5413 28.8242C24.4393 28.7833 25.0527 28.6406 25.5894 28.4321C26.1442 28.2164 26.6148 27.9279 27.0839 27.4589C27.5529 26.9898 27.8414 26.5192 28.0571 25.9644C28.2656 25.4277 28.4083 24.8143 28.4492 23.9163C28.4903 23.0163 28.5 22.729 28.5 20.4375C28.5 18.146 28.4903 17.8587 28.4492 16.9587C28.4083 16.0607 28.2656 15.4473 28.0571 14.9106C27.8414 14.3558 27.5529 13.8852 27.0839 13.4161C26.6148 12.9471 26.1442 12.6586 25.5894 12.443C25.0527 12.2344 24.4393 12.0917 23.5413 12.0508C22.6413 12.0097 22.354 12 20.0625 12ZM20.0625 13.5203C22.3154 13.5203 22.5823 13.5289 23.472 13.5695C24.2946 13.607 24.7414 13.7444 25.0387 13.86C25.4325 14.013 25.7136 14.1959 26.0088 14.4912C26.3041 14.7864 26.487 15.0675 26.64 15.4613C26.7556 15.7586 26.893 16.2054 26.9305 17.028C26.9711 17.9177 26.9797 18.1846 26.9797 20.4375C26.9797 22.6904 26.9711 22.9573 26.9305 23.847C26.893 24.6696 26.7556 25.1164 26.64 25.4137C26.487 25.8075 26.3041 26.0886 26.0088 26.3838C25.7136 26.6791 25.4325 26.862 25.0387 27.015C24.7414 27.1306 24.2946 27.268 23.472 27.3055C22.5824 27.3461 22.3156 27.3547 20.0625 27.3547C17.8094 27.3547 17.5426 27.3461 16.653 27.3055C15.8304 27.268 15.3836 27.1306 15.0863 27.015C14.6925 26.862 14.4114 26.6791 14.1162 26.3838C13.8209 26.0886 13.638 25.8075 13.485 25.4137C13.3694 25.1164 13.232 24.6696 13.1945 23.847C13.1539 22.9573 13.1453 22.6904 13.1453 20.4375C13.1453 18.1846 13.1539 17.9177 13.1945 17.028C13.232 16.2054 13.3694 15.7586 13.485 15.4613C13.638 15.0675 13.8209 14.7864 14.1162 14.4912C14.4114 14.1959 14.6925 14.013 15.0863 13.86C15.3836 13.7444 15.8304 13.607 16.653 13.5695C17.5427 13.5289 17.8096 13.5203 20.0625 13.5203ZM20.0625 16.1047C17.6696 16.1047 15.7297 18.0446 15.7297 20.4375C15.7297 22.8304 17.6696 24.7703 20.0625 24.7703C22.4554 24.7703 24.3953 22.8304 24.3953 20.4375C24.3953 18.0446 22.4554 16.1047 20.0625 16.1047ZM20.0625 23.25C18.5092 23.25 17.25 21.9908 17.25 20.4375C17.25 18.8842 18.5092 17.625 20.0625 17.625C21.6158 17.625 22.875 18.8842 22.875 20.4375C22.875 21.9908 21.6158 23.25 20.0625 23.25ZM25.579 15.9336C25.579 15.3744 25.1256 14.921 24.5664 14.921C24.0073 14.921 23.554 15.3744 23.554 15.9336C23.554 16.4927 24.0073 16.946 24.5664 16.946C25.1256 16.946 25.579 16.4927 25.579 15.9336Z"
+                      fill="#D5D5D5"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2342_4064">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- footer-line -->
+      <hr />
+
+      <!-- footer-bottom -->
+      <div
+        class="d-flex flex-lg-row justify-content-lg-between mt-lg-4 flex-column-reverse mt-6"
+      >
+        <p class="display-lg-8 display-9">
+          Copyright ©2023 綠羊 Green Sheep.All rights reserved.
+        </p>
+        <p class="display-lg-8 mb-lg-0 display-9 mb-4">
+          greensheepjewelry@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
