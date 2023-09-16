@@ -26,7 +26,7 @@
 
 //以下為Rita 新增（8/25)
 //在商品列表中，如果有需要選擇金色銀色就可以使用
-//如需看架構範例，可看2-1.productPage.html第183行
+//如需看架構範例，可看2-1.productPage.html第260行
 
 .color-choose {
   display: inline-block;
@@ -46,4 +46,12 @@
 //滑鼠變手指
 .cursor-pointer {
   cursor: pointer;
+}
+//textarea不能改變大小
+.no-resize {
+  resize: none;
+}
+
+.underline {
+  text-decoration: underline;
 }

@@ -25,32 +25,38 @@
       <div class="swiper mySwiper" style="margin-top: -65px">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="../assets/images/swiper-banner-1.jpg" alt="金色鏈子" />
+            <img
+              src="https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="金色鏈子"
+              class="w-100 object-fit-cover"
+              style="height: 450px"
+            />
           </div>
           <div class="swiper-slide">
             <img
-              src="../assets/images/swiper-banner-2.jpg"
+              src="https://images.unsplash.com/photo-1653903414969-0df006d9b6fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt="金色多層次項鍊"
+              class="w-100 object-fit-cover"
+              style="height: 450px"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="../assets/images/swiper-banner-3.jpg"
+              src="https://images.unsplash.com/photo-1514927465065-bbdc86c7a76c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt="金色貝殼耳環"
+              class="w-100 object-fit-cover"
+              style="height: 450px"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="../assets/images/swiper-banner-6.jpg"
+              src="https://images.unsplash.com/photo-1599907888904-14d5d22bfe19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt="純銀拉花項鍊"
+              class="w-100 object-fit-cover"
+              style="height: 450px"
             />
           </div>
         </div>
-        <!-- 左右箭頭 -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-        <!-- 分頁點點 -->
-        <!-- <div class="swiper-pagination"></div> -->
       </div>
 
       <main class="container">
@@ -59,7 +65,9 @@
           <aside class="d-none d-lg-block col-lg-3 h-bottom-line">
             <ul class="d-none d-md-block list-unstyled text-dark text-start">
               <li>
-                <a class="d-inline-block py-2 mx-3" href="#"
+                <a
+                  class="d-inline-block py-2 mx-3 position-relative active"
+                  href="#"
                   >全部商品 All products</a
                 >
               </li>
@@ -198,7 +206,7 @@
                       alt="天使之愛十字架|純銀＋可刻字"
                     />
                   </div>
-                  <span class="cus-tag">可客製</span>
+                  <!-- <span class="cus-tag">可客製</span> -->
                   <div
                     class="card-body text-start d-flex flex-column justify-content-between p-1 flex-grow-1"
                   >
@@ -583,11 +591,12 @@
       </main>
     </div>
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

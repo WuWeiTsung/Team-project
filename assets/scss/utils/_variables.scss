@@ -490,6 +490,7 @@ $spacers: (
 $position-values: (
   0: 0,
   2: 1.8%,
+
   10: 10%,
   15: 15%,
   20: 20%,
@@ -513,6 +514,7 @@ $position-values: (
   75: 75%,
   87: 87%,
   93: 93%,
+  95: 95%,
   100: 100%,
   n2: -2%,
   n7: -7%,
@@ -1507,7 +1509,7 @@ $card-cap-bg: rgba(var(--#{$prefix}body-color-rgb), 0.03) !default;
 $card-cap-color: null !default;
 $card-height: null !default;
 $card-color: null !default;
-$card-bg: var(--#{$prefix}body-bg) !default;
+$card-bg: transparent; //var(--#{$prefix}body-bg) !default; custom
 $card-img-overlay-padding: $spacer !default;
 $card-group-margin: $grid-gutter-width * 0.5 !default;
 // scss-docs-end card-variables
@@ -1720,9 +1722,9 @@ $alert-color-scale: 40% !default; // Deprecated in v5.2.0, to be removed in v6
 // Progress bars
 
 // scss-docs-start progress-variables
-$progress-height: 1rem !default;
+$progress-height: 1px; //1rem !default;custom
 $progress-font-size: $font-size-base * 0.75 !default;
-$progress-bg: var(--#{$prefix}secondary-bg) !default;
+$progress-bg: $primary; //var(--#{$prefix}secondary-bg) !default;custom
 $progress-border-radius: var(--#{$prefix}border-radius) !default;
 $progress-box-shadow: var(--#{$prefix}box-shadow-inset) !default;
 $progress-bar-color: $white !default;

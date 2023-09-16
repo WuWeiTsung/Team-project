@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   //自動播放
   autoplay: {
-    delay: 6000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   //分頁點點

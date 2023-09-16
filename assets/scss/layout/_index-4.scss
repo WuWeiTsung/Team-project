@@ -144,13 +144,16 @@
     color: $primary;
   }
   a:hover {
-    background-color: $primary;
-    border-radius: 0.25rem;
-    padding: 0.25rem;
-    p {
-      color: $white;
-    }
+    opacity: 80%;
   }
+  //因為滑動增加背景會推擊footer 的高度，所以改成其他樣式
+  //   background-color: $primary;
+  //   border-radius: 0.25rem;
+  //   padding: 0.25rem;
+  //   p {
+  //     color: $white;
+  //   }
+  // }
   a:active {
     p {
       color: $secondary;
@@ -260,7 +263,7 @@
     img {
       width: 280px;
       height: 56px;
-      padding: 2.8px 4.76px 0px 5.6px;
+      // padding: 2.8px 4.76px 0px 5.6px;
     }
   }
 }
