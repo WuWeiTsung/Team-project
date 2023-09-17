@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   //自動播放
   autoplay: {
-    delay: 6000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   //分頁點點
@@ -24,7 +24,6 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
 
 // 點擊愛心
 const heartIcons = document.querySelectorAll(".heart-icon");
@@ -43,35 +42,36 @@ var swiper = new Swiper(".cusSwiper", {
 
 //換寶石
 $(document).ready(function () {
-  // 获取所有按钮和图标元素
+  // 獲取所有寶石按鈕和對應寶石圖片元素
   var $toggleButtons = $(".toggle-button");
   var $icons = $(".icon");
 
-  // 创建状态变量来跟踪每个按钮的当前状态
+  // 創建狀態變量來跟蹤每個按鈕的當前狀態
   var buttonStates = {};
 
-  // 添加点击事件处理程序
+  // 增加點擊事件處理程序
   $toggleButtons.click(function () {
-    // 获取点击按钮的目标图标 ID
+    //獲取點擊按鈕的對應圖示ID
     var targetIconId = $(this).data("target");
 
-    // 获取当前按钮的状态
+    // 獲取當前按鈕狀態
     var currentState = buttonStates[targetIconId] || "hidden";
 
     if (currentState === "hidden") {
-      // 隐藏所有图标
+      // 隱藏所有圖示
       $icons.hide();
-      // 显示目标图标
+      // 顯示對應圖示
       $("#" + targetIconId).show();
-      // 更新按钮状态为显示
+      // 更新按鈕狀態為顯示
       buttonStates[targetIconId] = "shown";
     } else {
-      // 隐藏目标图标
+      // 隱藏目標圖示
       $("#" + targetIconId).hide();
-      // 更新按钮状态为隐藏
+      // 更新按鈕狀態為隱藏
       buttonStates[targetIconId] = "hidden";
     }
   });
+});
 
 // 回到最上頁按鈕(柯基新增 9/10)
 // 用goTop當成變數，而這個變數是抓到scroll-top-btn這個class
@@ -87,5 +87,36 @@ window.addEventListener("scroll", () => {
     // 如果沒有超過300px，就移除active這個class
     goTop.classList.remove("active");
   }
+});
 
+$(document).ready(function () {
+  // 獲取各個元素
+  var $inputText = $("#inputText");
+  var $fontRadios = $('input[name="fontRadio"]');
+  var $previewText = $("#previewText");
+  var $previewImage = $("#previewImage");
+  var $previewButton = $("#previewButton");
+
+  // 點擊預覽按鈕觸發事件
+  $previewButton.click(function (event) {
+    // 阻止表單默認提交行為
+    event.preventDefault();
+
+    // 獲取輸入的文字
+    var inputText = $inputText.val();
+
+    // 獲取選擇的字體
+    var selectedFont = $fontRadios.filter(":checked").val();
+
+    //限制中文字符不超過5個字，英文字符不超過10個字母
+    if (/^[\u4e00-\u9fa5\w\s\d]{1,5}$|^[\w\s\d]{1,10}$/.test(inputText)) {
+      // 更新輸入文字
+      $previewText.text(inputText);
+      $previewText.css("font-family", selectedFont);
+    } else {
+      alert(
+        "請注意：中文字數不超過5個字、英文字母不超過10個字。（包含空白及數字組合）"
+      );
+    }
+  });
 });

@@ -26,7 +26,7 @@
 
 //以下為Rita 新增（8/25)
 //在商品列表中，如果有需要選擇金色銀色就可以使用
-//如需看架構範例，可看2-1.productPage.html第183行
+//如需看架構範例，可看2-1.productPage.html第260行
 
 .color-choose {
   display: inline-block;
@@ -43,37 +43,15 @@
   background-color: $grey9F;
 }
 
-////滑鼠滑過時，下方文字會顯示下底線
-.h-bottom-line {
-  a {
-    &::after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 100%;
-      background-color: $primary;
-      transform: scalex(0); //Ｘ軸為基準，物件尺寸0
-      transform-origin: left; //起始點由左側開始
-      transition: transform 0.4s ease;
-    }
-    &:hover::after {
-      transform: scalex(1); //Ｘ軸為基準，物件尺寸100%
-    }
-  }
-}
-
-.object-position-center {
-  object-position: center center;
-}
-.object-position-bottom {
-  object-position: bottom;
-}
+//滑鼠變手指
 .cursor-pointer {
   cursor: pointer;
 }
-.icon {
-  display: none;
-}
+//textarea不能改變大小
 .no-resize {
   resize: none;
+}
+
+.underline {
+  text-decoration: underline;
 }

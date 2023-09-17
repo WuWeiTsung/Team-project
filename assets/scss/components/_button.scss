@@ -12,6 +12,7 @@
   border-bottom: 2px solid orange;
   position: relative;
   transition: background 0.3s, color 0.3s;
+  z-index: 1;
 }
 
 .custom-btn-secondary::before {
@@ -25,16 +26,14 @@
   transition: height 0.3s;
   z-index: -1;
 }
-
-.custom-btn-secondary:hover {
-  background: $secondary;
-  color: $white;
-}
-
 .custom-btn-secondary:hover::before {
   height: 100%;
 }
-//Shop Now 綠色按鈕，背景文字顏色變換start
+.custom-btn-secondary:hover {
+  color: $white;
+}
+
+//綠色按鈕，背景文字顏色變換:Shop Now
 .custom-btn-primary {
   background: $primary;
   color: $white;
@@ -74,8 +73,8 @@
 .custom-btn-primary:hover::before {
   height: 100%;
 }
-//Shop Now 綠色按鈕，背景文字顏色變換end
-//Shop Now 從下方長出白色按鈕start
+
+//從下方長出白色按鈕:Shop Now
 .custom-btn-white {
   // background: $primary;
   color: $white;
@@ -118,9 +117,50 @@
 .custom-btn-white:hover::before {
   height: 100%;
 }
+//從下方長出白色按鈕:More
+.custom-btn-more {
+  color: $white;
+  border-bottom: 2px solid $white;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
 
+.custom-btn-more::after {
+  content: "MORE";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  color: $white;
+  z-index: 2;
+}
 
-//開始製作 綠色按鈕，背景文字顏色變換start
+.custom-btn-more:hover::after {
+  color: $primary;
+}
+
+.custom-btn-more::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: $white;
+  color: $primary;
+  transition: height 0.3s;
+  z-index: 1;
+}
+
+.custom-btn-more:hover {
+  background: $white;
+  color: $primary;
+}
+
+.custom-btn-more:hover::before {
+  height: 100%;
+}
+
+//綠色按鈕，背景文字顏色變換:開始製作
 .custom-btn-start {
   background: $primary;
   color: $white;
@@ -162,7 +202,7 @@
   height: 100%;
 }
 
-//下一步：雷刻文字 綠色按鈕，背景文字顏色變換start
+// 綠色按鈕，背景文字顏色變換:下一步：雷刻文字
 .custom-btn-next {
   background: $primary;
   color: $white;
@@ -204,7 +244,7 @@
   height: 100%;
 }
 
-//下一步：加入購物車，綠色按鈕，背景文字顏色變換start
+//綠色按鈕，背景文字顏色變換:下一步：加入購物車
 .custom-btn-next2 {
   background: $primary;
   color: $white;
@@ -244,8 +284,8 @@
 
 .custom-btn-next2:hover::before {
   height: 100%;
+}
 
-  
 // 提交表單按鈕(柯基新增)
 .custom-btn-submit {
   color: $white;
@@ -255,5 +295,4 @@
   &:hover {
     opacity: 0.7;
   }
-
 }
